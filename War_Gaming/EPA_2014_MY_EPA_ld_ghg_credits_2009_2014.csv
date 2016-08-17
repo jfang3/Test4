@@ -1,0 +1,741 @@
+Manufacturer,Pathway (Primary or TLAAS),Model Year,Fleet,Region,Fleet Std,Fleet Avg,Volume,Credits (Mg),Credit Type
+Aston Martin,AC,2009,PV,,,,,673,A/C Efficiency
+Aston Martin,AC,2009,PV,,,,,874,A/C Leakage
+BMW,4,2009,PV,NC,,,95270,62528,A/C Efficiency
+BMW,4,2009,PV,NC,,,95270,74511,A/C Leakage
+BMW,4,2009,PV,NC,323,306,95270,316248,Fleet Average
+BMW,4,2009,LT,NC,,,16978,16106,A/C Efficiency
+BMW,4,2009,LT,NC,,,16978,26142,A/C Leakage
+BMW,4,2009,LT,NC,381,394,16978,-49852,Fleet Average
+Fiat Chrysler,1,2009,PV,US,,,171522,68074,A/C Efficiency
+Fiat Chrysler,1,2009,PV,US,,,287364,306794,A/C Leakage
+Fiat Chrysler,1,2009,PV,US,323,319,287364,224447,Fleet Average
+Fiat Chrysler,1,2009,LT,US,,,435791,86828,A/C Efficiency
+Fiat Chrysler,1,2009,LT,US,,,528286,825947,A/C Leakage
+Fiat Chrysler,1,2009,LT,US,439,402,528286,4414889,Fleet Average
+Ford,1,2009,PV,US,,,421306,314543,A/C Leakage
+Ford,1,2009,PV,US,323,299,508727,2384066,Fleet Average
+Ford,1,2009,LT,US,,,553174,869984,A/C Leakage
+Ford,1,2009,LT,US,439,397,504921,4789847,Fleet Average
+GM,1,2009,PV,US,,,838289,113142,A/C Efficiency
+GM,1,2009,PV,US,,,954239,792488,A/C Leakage
+GM,1,2009,PV,US,323,295,1048593,5733069,Fleet Average
+GM,1,2009,LT,US,,,87771,12683,A/C Efficiency
+GM,1,2009,LT,US,,,729189,1393043,A/C Leakage
+GM,1,2009,LT,US,439,413,844892,4961620,Fleet Average
+GM,1,2009,LT,US,,,8671,3329,Off-Cycle
+Honda,3,2009,PV,CA,,,193638,65125,A/C Efficiency
+Honda,3,2009,PV,NC,,,272880,91525,A/C Efficiency
+Honda,3,2009,PV,CA,,,380244,139317,A/C Leakage
+Honda,3,2009,PV,NC,,,422198,107454,A/C Leakage
+Honda,3,2009,PV,CA,323,266,388318,4321998,Fleet Average
+Honda,3,2009,PV,NC,323,257,433183,5582613,Fleet Average
+Honda,3,2009,LT,CA,,,61086,51662,A/C Efficiency
+Honda,3,2009,LT,NC,,,79249,67024,A/C Efficiency
+Honda,3,2009,LT,CA,,,89079,31417,A/C Leakage
+Honda,3,2009,LT,NC,,,232149,145067,A/C Leakage
+Honda,3,2009,LT,CA,439,373,89079,1327909,Fleet Average
+Honda,3,2009,LT,NC,381,339,232149,2202242,Fleet Average
+Hyundai,3,2009,PV,CA,323,267,121778,1331616,Fleet Average
+Hyundai,3,2009,PV,NC,323,265,216105,2447457,Fleet Average
+Hyundai,3,2009,LT,CA,439,360,25472,454505,Fleet Average
+Hyundai,3,2009,LT,NC,381,356,65943,372355,Fleet Average
+Kia,1,2009,PV,US,323,264,175028,2016423,Fleet Average
+Kia,1,2009,LT,US,439,371,72815,1118352,Fleet Average
+Mazda,3,2009,PV,CA,323,281,40884,335293,Fleet Average
+Mazda,3,2009,PV,NC,323,280,61283,514554,Fleet Average
+Mazda,3,2009,LT,CA,439,379,10612,143813,Fleet Average
+Mazda,3,2009,LT,NC,381,329,35084,412061,Fleet Average
+Mercedes,AC,2009,PV,NC,,,53062,30018,A/C Efficiency
+Mercedes,AC,2009,PV,NC,,,57812,31408,A/C Leakage
+Mercedes,AC,2009,LT,NC,,,20035,16744,A/C Efficiency
+Mercedes,AC,2009,LT,NC,,,20035,18297,A/C Leakage
+Mitsubishi,3,2009,PV,CA,323,290,23293,150093,Fleet Average
+Mitsubishi,3,2009,PV,NC,323,294,60347,341724,Fleet Average
+Mitsubishi,3,2009,LT,CA,439,342,872,19105,Fleet Average
+Mitsubishi,3,2009,LT,NC,381,322,8573,114244,Fleet Average
+Nissan,1,2009,PV,US,,,605439,225310,A/C Efficiency
+Nissan,1,2009,PV,US,,,143263,20466,A/C Leakage
+Nissan,1,2009,PV,US,323,268,605439,6502124,Fleet Average
+Nissan,1,2009,LT,US,,,234883,94333,A/C Efficiency
+Nissan,1,2009,LT,US,,,220896,100005,A/C Leakage
+Nissan,1,2009,LT,US,439,372,234883,3554474,Fleet Average
+Subaru,1,2009,PV,US,323,308,156871,459469,Fleet Average
+Subaru,1,2009,LT,US,439,322,43945,1161300,Fleet Average
+Suzuki,1,2009,PV,US,323,275,24859,232995,Fleet Average
+Suzuki,1,2009,LT,US,439,345,10146,215413,Fleet Average
+Toyota,1,2009,PV,US,,,1273815,639927,A/C Efficiency
+Toyota,1,2009,PV,US,,,1264617,507913,A/C Leakage
+Toyota,1,2009,PV,US,323,245,1273815,19400957,Fleet Average
+Toyota,1,2009,LT,US,,,482160,195200,A/C Efficiency
+Toyota,1,2009,LT,US,,,363547,343961,A/C Leakage
+Toyota,1,2009,LT,US,439,345,482202,10237780,Fleet Average
+Volkswagen,3,2009,PV,CA,323,293,118411,693642,Fleet Average
+Volkswagen,3,2009,PV,NC,323,290,139498,898885,Fleet Average
+Volkswagen,3,2009,PV,US,,,266152,231296,A/C Efficiency
+Volkswagen,3,2009,PV,US,,,266152,110126,A/C Leakage
+Volkswagen,3,2009,LT,CA,439,382,13295,171164,Fleet Average
+Volkswagen,3,2009,LT,NC,381,363,21078,85694,Fleet Average
+Volkswagen,3,2009,LT,US,,,26130,28408,A/C Efficiency
+Volkswagen,3,2009,LT,US,,,26130,23990,A/C Leakage
+Volvo,1,2009,PV,US,,,31618,10153,A/C Efficiency
+Volvo,1,2009,PV,US,,,31618,38577,A/C Leakage
+Volvo,1,2009,PV,US,323,317,31618,37043,Fleet Average
+Volvo,1,2009,LT,US,,,16928,7853,A/C Efficiency
+Volvo,1,2009,LT,US,,,16928,18123,A/C Leakage
+Volvo,1,2009,LT,US,439,407,11420,82540,Fleet Average
+Aston Martin,AC,2010,PV,,,,,305,A/C Efficiency
+Aston Martin,AC,2010,PV,,,,,371,A/C Leakage
+BMW,4,2010,PV,NC,,,72225,46231,A/C Efficiency
+BMW,4,2010,PV,NC,,,72225,55480,A/C Leakage
+BMW,4,2010,PV,NC,323,309,72225,197441,Fleet Average
+BMW,4,2010,LT,NC,,,13612,12765,A/C Efficiency
+BMW,4,2010,LT,NC,,,13612,21169,A/C Leakage
+BMW,4,2010,LT,NC,376,384,13612,-24596,Fleet Average
+Ferrari,Primary,2010,,US,,,,90000,Transfer
+Ferrari,Primary,2010,,US,,,,85000,Transfer
+Ferrari,Primary,2010,,US,,,,90000,Transfer
+Fiat Chrysler,1,2010,PV,US,,,258478,107553,A/C Efficiency
+Fiat Chrysler,1,2010,PV,US,,,430110,459191,A/C Leakage
+Fiat Chrysler,1,2010,PV,US,301,316,430110,-1259775,Fleet Average
+Fiat Chrysler,1,2010,LT,US,,,579480,111650,A/C Efficiency
+Fiat Chrysler,1,2010,LT,US,,,729662,1130211,A/C Leakage
+Fiat Chrysler,1,2010,LT,US,420,394,729662,4284933,Fleet Average
+Fiat Chrysler,Primary,2010,,US,,,,80610,Transfer
+Fiat Chrysler,Primary,2010,,US,,,,63773,Transfer
+Fiat Chrysler,Primary,2010,,US,,,,2507000,Transfer
+Fiat Chrysler,Primary,2010,,US,,,,3000000,Transfer
+Ford,1,2010,PV,US,,,34076,15304,A/C Efficiency
+Ford,1,2010,PV,US,,,713574,592822,A/C Leakage
+Ford,1,2010,PV,US,301,289,856065,2005904,Fleet Average
+Ford,1,2010,LT,US,,,12516,6501,A/C Efficiency
+Ford,1,2010,LT,US,,,1085059,1741938,A/C Leakage
+Ford,1,2010,LT,US,420,406,965968,3054497,Fleet Average
+GM,1,2010,PV,US,,,597220,99629,A/C Efficiency
+GM,1,2010,PV,US,,,786528,716959,A/C Leakage
+GM,1,2010,PV,US,301,298,857825,502507,Fleet Average
+GM,1,2010,LT,US,,,620030,263524,A/C Efficiency
+GM,1,2010,LT,US,,,644464,1487242,A/C Leakage
+GM,1,2010,LT,US,420,382,932358,8002308,Fleet Average
+GM,1,2010,LT,US,,,2512,965,Off-Cycle
+Honda,3,2010,PV,CA,,,209719,79930,A/C Efficiency
+Honda,3,2010,PV,NC,,,271957,104114,A/C Efficiency
+Honda,3,2010,PV,CA,,,426182,169949,A/C Leakage
+Honda,3,2010,PV,NC,,,410122,107099,A/C Leakage
+Honda,3,2010,PV,CA,301,262,429692,3272232,Fleet Average
+Honda,3,2010,PV,NC,323,251,414562,5828330,Fleet Average
+Honda,3,2010,LT,CA,,,73802,63566,A/C Efficiency
+Honda,3,2010,LT,NC,,,52077,90085,A/C Efficiency
+Honda,3,2010,LT,CA,,,290216,35059,A/C Leakage
+Honda,3,2010,LT,NC,,,95106,191252,A/C Leakage
+Honda,3,2010,LT,CA,420,366,95106,1159980,Fleet Average
+Honda,3,2010,LT,NC,376,329,290216,3080833,Fleet Average
+Honda,Primary,2010,,US,,,,-90000,Transfer
+Honda,Primary,2010,,US,,,,-85000,Transfer
+Honda,Primary,2010,,US,,,,-80610,Transfer
+Honda,Primary,2010,,US,,,,-63773,Transfer
+Honda,Primary,2010,,US,,,,-3000000,Transfer
+Honda,Primary,2010,,US,,,,-90000,Transfer
+Honda,Primary,2010,,US,,,,-200000,Transfer
+Hyundai,3,2010,PV,CA,301,252,130356,1247238,Fleet Average
+Hyundai,3,2010,PV,NC,323,250,192584,2745145,Fleet Average
+Hyundai,3,2010,LT,CA,420,317,19221,447159,Fleet Average
+Hyundai,3,2010,LT,NC,376,305,59181,949051,Fleet Average
+Kia,1,2010,PV,US,301,248,226097,2339876,Fleet Average
+Kia,1,2010,LT,US,420,357,21926,311996,Fleet Average
+Mazda,3,2010,PV,CA,301,265,86948,611201,Fleet Average
+Mazda,3,2010,PV,NC,323,263,133292,1561628,Fleet Average
+Mazda,3,2010,LT,CA,420,360,25351,343554,Fleet Average
+Mazda,3,2010,LT,NC,376,329,64558,685325,Fleet Average
+Mercedes,AC,2010,PV,NC,,,62638,35122,A/C Efficiency
+Mercedes,AC,2010,PV,NC,,,59736,30856,A/C Leakage
+Mercedes,AC,2010,LT,NC,,,33642,25808,A/C Efficiency
+Mercedes,AC,2010,LT,NC,,,33642,32334,A/C Leakage
+Mercedes,Primary,2010,,US,,,,35580,Transfer
+Mercedes,Primary,2010,,US,,,,200000,Transfer
+Mercedes,Primary,2010,,US,,,,200000,Transfer
+Mitsubishi,3,2010,PV,CA,301,288,15733,39937,Fleet Average
+Mitsubishi,3,2010,PV,NC,323,277,30144,270758,Fleet Average
+Mitsubishi,3,2010,LT,CA,420,365,2699,33529,Fleet Average
+Mitsubishi,3,2010,LT,NC,376,323,14832,177552,Fleet Average
+Nissan,1,2010,PV,US,,,617548,231360,A/C Efficiency
+Nissan,1,2010,PV,US,,,167243,16755,A/C Leakage
+Nissan,1,2010,PV,US,301,266,617548,4220471,Fleet Average
+Nissan,1,2010,LT,US,,,236588,81072,A/C Efficiency
+Nissan,1,2010,LT,US,,,214294,109905,A/C Leakage
+Nissan,1,2010,LT,US,420,399,236588,1122176,Fleet Average
+Nissan,Primary,2010,,US,,,,-200000,Transfer
+Subaru,1,2010,PV,US,301,299,183763,71765,Fleet Average
+Subaru,1,2010,LT,US,420,292,74489,2153531,Fleet Average
+Suzuki,1,2010,PV,US,301,259,20212,165760,Fleet Average
+Suzuki,1,2010,LT,US,420,337,8728,163622,Fleet Average
+Tesla,1,2010,PV,US,,,599,374,A/C Efficiency
+Tesla,1,2010,PV,US,301,0,599,35206,Fleet Average
+Tesla,1,2010,PV,,,,599,,Advanced Technology
+Tesla,Primary,2010,,US,,,,-35580,Transfer
+Toyota,1,2010,PV,US,,,1412172,768652,A/C Efficiency
+Toyota,1,2010,PV,US,,,1402166,583900,A/C Leakage
+Toyota,1,2010,PV,US,301,228,1412172,20129484,Fleet Average
+Toyota,1,2010,LT,US,,,793187,373144,A/C Efficiency
+Toyota,1,2010,LT,US,,,648233,598764,A/C Leakage
+Toyota,1,2010,LT,US,420,353,793226,12003853,Fleet Average
+Toyota,Primary,2010,,US,,,,-2507000,Transfer
+Volkswagen,3,2010,PV,CA,301,277,134231,629052,Fleet Average
+Volkswagen,3,2010,PV,NC,323,274,143295,1371037,Fleet Average
+Volkswagen,3,2010,PV,US,,,284037,249431,A/C Efficiency
+Volkswagen,3,2010,PV,US,,,284037,120055,A/C Leakage
+Volkswagen,3,2010,LT,CA,420,361,19350,257859,Fleet Average
+Volkswagen,3,2010,LT,NC,376,356,23488,106102,Fleet Average
+Volkswagen,3,2010,LT,US,,,36327,42110,A/C Efficiency
+Volkswagen,3,2010,LT,US,,,36327,36017,A/C Leakage
+Volvo,1,2010,PV,US,,,23529,9768,A/C Efficiency
+Volvo,1,2010,PV,US,,,23529,28688,A/C Leakage
+Volvo,1,2010,PV,US,301,317,23529,-73510,Fleet Average
+Volvo,1,2010,LT,US,,,34413,26068,A/C Efficiency
+Volvo,1,2010,LT,US,,,34413,57514,A/C Leakage
+Volvo,1,2010,LT,US,420,380,34413,310908,Fleet Average
+Aston Martin,AC,2011,PV,,,,,402,A/C Efficiency
+Aston Martin,AC,2011,PV,,,,,707,A/C Leakage
+BMW,4,2011,PV,NC,,,153966,113483,A/C Efficiency
+BMW,4,2011,PV,NC,,,153966,122019,A/C Leakage
+BMW,4,2011,PV,NC,302,303,153966,-30064,Fleet Average
+BMW,4,2011,LT,NC,,,31323,30428,A/C Efficiency
+BMW,4,2011,LT,NC,,,31323,49627,A/C Leakage
+BMW,4,2011,LT,NC,351,356,31323,-35374,Fleet Average
+Fiat Chrysler,1,2011,PV,US,,,335790,118345,A/C Efficiency
+Fiat Chrysler,1,2011,PV,US,,,335790,412368,A/C Leakage
+Fiat Chrysler,1,2011,PV,US,267,309,335790,-2753843,Fleet Average
+Fiat Chrysler,1,2011,LT,US,,,739487,324184,A/C Efficiency
+Fiat Chrysler,1,2011,LT,US,,,739487,1250556,A/C Leakage
+Fiat Chrysler,1,2011,LT,US,390,396,739487,-1002145,Fleet Average
+Fiat Chrysler,Primary,2011,,US,,,,500000,Transfer
+Ford,1,2011,PV,US,,,57499,14415,A/C Efficiency
+Ford,1,2011,PV,US,,,832559,736492,A/C Leakage
+Ford,1,2011,PV,US,267,283,792654,-2476429,Fleet Average
+Ford,1,2011,LT,US,,,464707,64493,A/C Efficiency
+Ford,1,2011,LT,US,,,833730,1369540,A/C Leakage
+Ford,1,2011,LT,US,390,387,873635,591971,Fleet Average
+GM,1,2011,PV,US,,,542683,310606,A/C Efficiency
+GM,1,2011,PV,US,,,658994,1329675,A/C Leakage
+GM,1,2011,PV,US,,54,4370,,Advanced Technology
+GM,1,2011,PV,US,267,296,1006900,-5701728,Fleet Average
+GM,1,2011,LT,US,,,1043792,330160,A/C Efficiency
+GM,1,2011,LT,US,,,1089891,1648173,A/C Leakage
+GM,1,2011,LT,US,390,382,1419043,2564097,Fleet Average
+GM,1,2011,LT,US,,,3484,1338,Off-Cycle
+Honda,3,2011,PV,CA,,,150357,50612,A/C Efficiency
+Honda,3,2011,PV,NC,,,181399,61129,A/C Efficiency
+Honda,3,2011,PV,CA,,,246793,66416,A/C Leakage
+Honda,3,2011,PV,NC,,,316209,76415,A/C Leakage
+Honda,3,2011,PV,CA,267,250,247437,821364,Fleet Average
+Honda,3,2011,PV,NC,290,253,317065,2290721,Fleet Average
+Honda,3,2011,LT,CA,,,151234,128929,A/C Efficiency
+Honda,3,2011,LT,NC,,,191700,158614,A/C Efficiency
+Honda,3,2011,LT,CA,,,244121,138202,A/C Leakage
+Honda,3,2011,LT,NC,,,280042,145472,A/C Leakage
+Honda,3,2011,LT,CA,390,335,244121,3032611,Fleet Average
+Honda,3,2011,LT,NC,347,338,280042,569265,Fleet Average
+Hyundai,3,2011,PV,CA,267,247,197404,770918,Fleet Average
+Hyundai,3,2011,PV,NC,296,257,346060,2635349,Fleet Average
+Hyundai,3,2011,LT,CA,390,316,28570,477519,Fleet Average
+Hyundai,3,2011,LT,NC,337,311,21998,129183,Fleet Average
+Kia,1,2011,PV,US,267,249,279367,981906,Fleet Average
+Kia,1,2011,LT,US,390,303,187053,3675639,Fleet Average
+Mazda,3,2011,PV,CA,267,256,59856,128565,Fleet Average
+Mazda,3,2011,PV,NC,289,266,112883,506966,Fleet Average
+Mazda,3,2011,LT,CA,390,339,25145,289648,Fleet Average
+Mazda,3,2011,LT,NC,347,359,18435,-49966,Fleet Average
+Mercedes,AC,2011,PV,NC,,,69772,71586,A/C Efficiency
+Mercedes,AC,2011,PV,NC,,,71711,41110,A/C Leakage
+Mercedes,AC,2011,PV,US,,,546,,Advanced Technology
+Mercedes,AC,2011,LT,NC,,,33670,28138,A/C Efficiency
+Mercedes,AC,2011,LT,NC,,,33670,16851,A/C Leakage
+Mercedes,Primary,2011,,US,,,,14192,Transfer
+Mercedes,Primary,2011,,US,,,,500000,Transfer
+Mitsubishi,3,2011,PV,CA,267,267,25408,0,Fleet Average
+Mitsubishi,3,2011,PV,NC,288,266,49447,212415,Fleet Average
+Mitsubishi,3,2011,LT,CA,390,358,7712,55740,Fleet Average
+Mitsubishi,3,2011,LT,NC,335,325,15159,34239,Fleet Average
+Nissan,1,2011,PV,US,,,666660,248584,A/C Efficiency
+Nissan,1,2011,PV,US,,,248209,44656,A/C Leakage
+Nissan,1,2011,PV,US,,,8495,,Advanced Technology
+Nissan,1,2011,PV,US,267,261,666660,781048,Fleet Average
+Nissan,1,2011,LT,US,,,299074,102799,A/C Efficiency
+Nissan,1,2011,LT,US,,,251623,135259,A/C Leakage
+Nissan,1,2011,LT,US,390,382,299074,540403,Fleet Average
+Nissan,Primary,2011,,US,,,,-500000,Transfer
+Nissan,Primary,2011,,US,,,,-500000,Transfer
+Subaru,1,2011,PV,US,267,295,176923,-967307,Fleet Average
+Subaru,1,2011,LT,US,390,292,129950,2876413,Fleet Average
+Suzuki,1,2011,PV,US,267,262,19390,18931,Fleet Average
+Suzuki,1,2011,LT,US,390,345,7864,79929,Fleet Average
+Tesla,1,2011,PV,US,,,269,168,A/C Efficiency
+Tesla,1,2011,PV,US,,,269,,Advanced Technology
+Tesla,1,2011,PV,US,267,0,269,14024,Fleet Average
+Tesla,Primary,2011,,US,,,,-14192,Transfer
+Toyota,1,2011,PV,US,,,1140255,621412,A/C Efficiency
+Toyota,1,2011,PV,US,,,1090293,532137,A/C Leakage
+Toyota,1,2011,PV,US,267,243,1140255,5343618,Fleet Average
+Toyota,1,2011,LT,US,,,834019,483423,A/C Efficiency
+Toyota,1,2011,LT,US,,,814743,513096,A/C Leakage
+Toyota,1,2011,LT,US,390,352,834019,7158277,Fleet Average
+Volkswagen,3,2011,PV,CA,267,273,121114,-141895,Fleet Average
+Volkswagen,3,2011,PV,NC,289,267,151373,650269,Fleet Average
+Volkswagen,3,2011,PV,US,,,268550,239277,A/C Efficiency
+Volkswagen,3,2011,PV,US,,,268550,109887,A/C Leakage
+Volkswagen,3,2011,LT,CA,390,334,25667,324648,Fleet Average
+Volkswagen,3,2011,LT,NC,342,332,35176,79450,Fleet Average
+Volkswagen,3,2011,LT,US,,,64780,71965,A/C Efficiency
+Volkswagen,3,2011,LT,US,,,64780,52936,A/C Leakage
+Volvo,1,2011,PV,US,,,24846,9873,A/C Efficiency
+Volvo,1,2011,PV,US,,,24846,30220,A/C Leakage
+Volvo,1,2011,PV,US,267,300,24846,-160100,Fleet Average
+Volvo,1,2011,LT,US,,,27761,24807,A/C Efficiency
+Volvo,1,2011,LT,US,,,27761,45933,A/C Leakage
+Volvo,1,2011,LT,US,390,354,27761,225729,Fleet Average
+BMW,Primary,2012,PV,US,,,191154,116556,A/C Efficiency
+BMW,Primary,2012,PV,US,,,191045,149108,A/C Leakage
+BMW,Primary,2012,PV,US,269,277,191154,-298604,Fleet Average
+BMW,Primary,2012,LT,US,,,65856,63960,A/C Efficiency
+BMW,Primary,2012,LT,US,,,65856,102347,A/C Leakage
+BMW,Primary,2012,LT,US,,,11641,-3944,CH4 Deficit
+BMW,Primary,2012,LT,US,336,363,65856,-401613,Fleet Average
+BMW,Primary,2012,LT,US,,,11641,-15671,N2O Deficit
+BYD Motors,Primary,2012,PV,,,,11,,Advanced Technology
+BYD Motors,Primary,2012,PV,,277,0,11,595,Fleet Average
+Coda,Primary,2012,PV,US,246,0,115,5524,Fleet Average
+Ferrari,TLAAS,2012,PV,US,,,,1091,A/C Efficiency
+Ferrari,TLAAS,2012,PV,US,,,,1858,A/C Leakage
+Ferrari,TLAAS,2012,PV,US,345,494,1510,-43932,Fleet Average
+Fiat Chrysler,Primary,2012,PV,US,,,536415,323190,A/C Efficiency
+Fiat Chrysler,Primary,2012,PV,US,,,536415,652554,A/C Leakage
+Fiat Chrysler,Primary,2012,PV,US,,,187106,-8804,CH4 Deficit
+Fiat Chrysler,Primary,2012,PV,US,277,287,538887,-1052252,Fleet Average
+Fiat Chrysler,Primary,2012,LT,US,,,994996,509863,A/C Efficiency
+Fiat Chrysler,Primary,2012,LT,US,,,994996,1748404,A/C Leakage
+Fiat Chrysler,Primary,2012,LT,US,,,427450,-19913,CH4 Deficit
+Fiat Chrysler,Primary,2012,LT,US,345,363,994996,-4045226,Fleet Average
+Fisker,Primary,2012,PV,US,,,1415,,Advanced Technology
+Fisker,Primary,2012,PV,US,315,146,1415,46694,Fleet Average
+Ford,Primary,2012,PV,US,,,197889,40776,A/C Efficiency
+Ford,Primary,2012,PV,US,,,1052721,890386,A/C Leakage
+Ford,Primary,2012,PV,US,,,653,,Advanced Technology
+Ford,Primary,2012,PV,US,,,174597,-13440,CH4 Deficit
+Ford,Primary,2012,PV,US,265,252,1052721,2672261,Fleet Average
+Ford,Primary,2012,PV,US,,,3110,-2714,N2O Deficit
+Ford,Primary,2012,LT,US,,,437204,62072,A/C Efficiency
+Ford,Primary,2012,LT,US,,,701602,1169219,A/C Leakage
+Ford,Primary,2012,LT,US,,,402710,-30401,CH4 Deficit
+Ford,Primary,2012,LT,US,364,364,701602,0,Fleet Average
+Ford,Primary,2012,LT,US,,,145756,-147158,N2O Deficit
+GM,Primary,2012,PV,US,,,1417421,652193,A/C Efficiency
+GM,Primary,2012,PV,US,,,1449244,1597485,A/C Leakage
+GM,Primary,2012,PV,US,,,18355,,Advanced Technology
+GM,Primary,2012,PV,US,,,383896,-28110,CH4 Deficit
+GM,Primary,2012,PV,US,272,272,1449244,0,Fleet Average
+GM,Primary,2012,PV,US,,,17016,4984,Off-Cycle
+GM,Primary,2012,LT,US,,,827037,277651,A/C Efficiency
+GM,Primary,2012,LT,US,,,915130,1474314,A/C Leakage
+GM,Primary,2012,LT,US,,,515380,-73522,CH4 Deficit
+GM,Primary,2012,LT,US,369,374,915130,-1033479,Fleet Average
+GM,Primary,2012,LT,US,,,2176,838,Off-Cycle
+Honda,Primary,2012,PV,US,,,1046684,200475,A/C Efficiency
+Honda,Primary,2012,PV,US,,,1035238,282651,A/C Leakage
+Honda,Primary,2012,PV,US,263,237,1047165,5316314,Fleet Average
+Honda,Primary,2012,LT,US,,,493414,287543,A/C Efficiency
+Honda,Primary,2012,LT,US,,,493414,253851,A/C Leakage
+Honda,Primary,2012,LT,US,333,320,493414,1448784,Fleet Average
+Hyundai,Primary,2012,PV,US,,,583863,256600,A/C Efficiency
+Hyundai,Primary,2012,PV,US,,,583863,211245,A/C Leakage
+Hyundai,Primary,2012,PV,US,269,243,580904,2949171,Fleet Average
+Hyundai,Primary,2012,LT,US,,,47766,20629,A/C Efficiency
+Hyundai,Primary,2012,LT,US,,,47766,56218,A/C Leakage
+Hyundai,Primary,2012,LT,US,316,312,46097,41647,Fleet Average
+Jaguar Land Rover,TLAAS,2012,PV,US,,,12769,4771,A/C Efficiency
+Jaguar Land Rover,TLAAS,2012,PV,US,,,12769,6634,A/C Leakage
+Jaguar Land Rover,TLAAS,2012,PV,US,364,376,12769,-29920,Fleet Average
+Jaguar Land Rover,Primary,2012,LT,US,,,9086,7593,A/C Efficiency
+Jaguar Land Rover,TLAAS,2012,LT,US,,,32706,30248,A/C Efficiency
+Jaguar Land Rover,Primary,2012,LT,US,,,9086,12518,A/C Leakage
+Jaguar Land Rover,TLAAS,2012,LT,US,,,32706,27158,A/C Leakage
+Jaguar Land Rover,Primary,2012,LT,US,316,303,9086,26679,Fleet Average
+Jaguar Land Rover,TLAAS,2012,LT,US,408,477,32706,-509713,Fleet Average
+Kia,Primary,2012,PV,US,,,437918,213742,A/C Efficiency
+Kia,Primary,2012,PV,US,,,437918,206407,A/C Leakage
+Kia,Primary,2012,PV,US,266,258,443751,693189,Fleet Average
+Kia,Primary,2012,LT,US,,,15189,11710,A/C Efficiency
+Kia,Primary,2012,LT,US,,,48612,22597,A/C Leakage
+Kia,Primary,2012,LT,US,338,324,49250,155734,Fleet Average
+Mazda,Primary,2012,PV,US,259,241,213308,749725,Fleet Average
+Mazda,Primary,2012,LT,US,323,324,65696,-14838,Fleet Average
+Mercedes,Primary,2012,PV,US,,,,167018,A/C Efficiency
+Mercedes,TLAAS,2012,PV,US,,,,8866,A/C Efficiency
+Mercedes,Primary,2012,PV,US,,,,139724,A/C Leakage
+Mercedes,TLAAS,2012,PV,US,,,,4587,A/C Leakage
+Mercedes,Primary,2012,PV,US,,,25,,Advanced Technology
+Mercedes,Primary,2012,PV,US,271,298,163247,-860659,Fleet Average
+Mercedes,TLAAS,2012,PV,US,368,406,10585,-78541,Fleet Average
+Mercedes,Primary,2012,LT,US,,,,65016,A/C Efficiency
+Mercedes,TLAAS,2012,LT,US,,,,18061,A/C Efficiency
+Mercedes,Primary,2012,LT,US,,,,97267,A/C Leakage
+Mercedes,TLAAS,2012,LT,US,,,,28291,A/C Leakage
+Mercedes,Primary,2012,LT,US,335,368,61343,-457223,Fleet Average
+Mercedes,TLAAS,2012,LT,US,434,408,20230,118800,Fleet Average
+Mercedes,Primary,2012,,US,,,,177941,Transfer
+Mercedes,Primary,2012,,US,,,,250000,Transfer
+Mitsubishi,Primary,2012,PV,US,,,1435,,Advanced Technology
+Mitsubishi,Primary,2012,PV,US,261,262,51927,-10139,Fleet Average
+Mitsubishi,Primary,2012,LT,US,307,283,12540,67976,Fleet Average
+Nissan,Primary,2012,PV,US,,,896278,327145,A/C Efficiency
+Nissan,Primary,2012,PV,US,,,287947,37027,A/C Leakage
+Nissan,Primary,2012,PV,US,,,11460,,Advanced Technology
+Nissan,Primary,2012,PV,US,263,258,896278,875054,Fleet Average
+Nissan,Primary,2012,LT,US,,,331769,131798,A/C Efficiency
+Nissan,Primary,2012,LT,US,,,257063,147882,A/C Leakage
+Nissan,Primary,2012,LT,US,337,367,331886,-2248843,Fleet Average
+Nissan,Primary,2012,,US,,,,-250000,Transfer
+Porsche,TLAAS,2012,PV,US,332,325,16946,23163,Fleet Average
+Porsche,TLAAS,2012,LT,US,422,362,12927,175185,Fleet Average
+Subaru,Primary,2012,PV,US,260,257,106152,62183,Fleet Average
+Subaru,Primary,2012,PV,,,,,35270,A/C Efficiency
+Subaru,Primary,2012,LT,US,309,296,163860,481133,Fleet Average
+Subaru,Primary,2012,LT,,,,,67731,A/C Efficiency
+Suzuki,Primary,2012,PV,US,251,267,25266,-78937,Fleet Average
+Suzuki,Primary,2012,LT,US,325,361,5997,-48762,Fleet Average
+Tesla,Primary,2012,PV,US,,,2952,3286,A/C Efficiency
+Tesla,Primary,2012,PV,US,,,2952,,Advanced Technology
+Tesla,Primary,2012,PV,US,304,0,2952,175231,Fleet Average
+Tesla,Primary,2012,,US,,,,-177941,Transfer
+Toyota,Primary,2012,PV,US,,,,924609,A/C Efficiency
+Toyota,Primary,2012,PV,US,,,,872335,A/C Leakage
+Toyota,Primary,2012,PV,US,,,452,,Advanced Technology
+Toyota,Primary,2012,PV,US,264,221,1298021,10898641,Fleet Average
+Toyota,Primary,2012,LT,US,,,,403168,A/C Efficiency
+Toyota,Primary,2012,LT,US,,,,553633,A/C Leakage
+Toyota,Primary,2012,LT,US,342,345,722227,-489377,Fleet Average
+Volkswagen,Primary,2012,PV,US,,,,374795,A/C Efficiency
+Volkswagen,Primary,2012,PV,US,,,,221065,A/C Leakage
+Volkswagen,Primary,2012,PV,US,,,,-56497,CH4 Deficit
+Volkswagen,Primary,2012,PV,US,263,273,500690,-977667,Fleet Average
+Volkswagen,Primary,2012,PV,US,,,,-138267,N2O Deficit
+Volkswagen,Primary,2012,LT,US,,,,77360,A/C Efficiency
+Volkswagen,Primary,2012,LT,US,,,,59108,A/C Leakage
+Volkswagen,Primary,2012,LT,US,,,,-1515,CH4 Deficit
+Volkswagen,Primary,2012,LT,US,327,330,64882,-43964,Fleet Average
+Volkswagen,Primary,2012,LT,US,,,,-16913,N2O Deficit
+Volvo,Primary,2012,PV,US,,,52375,43280,A/C Efficiency
+Volvo,Primary,2012,PV,US,,,52375,64281,A/C Leakage
+Volvo,Primary,2012,PV,US,272,297,52375,-255674,Fleet Average
+Volvo,Primary,2012,LT,US,,,19432,18880,A/C Efficiency
+Volvo,Primary,2012,LT,US,,,19432,33040,A/C Leakage
+Volvo,Primary,2012,LT,US,325,343,19432,-79002,Fleet Average
+Aston Martin,TLAAS,2013,PV,,,,364,184,A/C Efficiency
+Aston Martin,TLAAS,2013,PV,,,,364,243,A/C Leakage
+Aston Martin,TLAAS,2013,PV,,321,444,364,-8742,Fleet Average
+BMW,Primary,2013,PV,,,,303319,208519,A/C Efficiency
+BMW,Primary,2013,PV,,,,302969,251534,A/C Leakage
+BMW,Primary,2013,PV,,263,271,303319,-473818,Fleet Average
+BMW,Primary,2013,LT,,,,98969,96121,A/C Efficiency
+BMW,Primary,2013,LT,,,,98969,156207,A/C Leakage
+BMW,Primary,2013,LT,,,,3800,-1287,CH4 Deficit
+BMW,Primary,2013,LT,,324,346,98969,-491780,Fleet Average
+BMW,Primary,2013,LT,,,,3800,-5115,N2O Deficit
+BYD Motors,Primary,2013,PV,,,,32,,Advanced Technology
+BYD Motors,Primary,2013,PV,,269,0,32,1681,Fleet Average
+Coda,Primary,2013,PV,,,,37,,Advanced Technology
+Coda,Primary,2013,PV,,239,0,37,1727,Fleet Average
+Ferrari,TLAAS,2013,PV,,,,1902,1388,A/C Efficiency
+Ferrari,TLAAS,2013,PV,,,,1902,2422,A/C Leakage
+Ferrari,TLAAS,2013,PV,,331,475,1902,-53480,Fleet Average
+Fiat Chrysler,Primary,2013,PV,,,,652065,421109,A/C Efficiency
+Fiat Chrysler,Primary,2013,PV,,,,652065,796491,A/C Leakage
+Fiat Chrysler,Primary,2013,PV,,,,2353,,Advanced Technology
+Fiat Chrysler,Primary,2013,PV,,,,132555,-5058,CH4 Deficit
+Fiat Chrysler,Primary,2013,PV,,270,277,654845,-895074,Fleet Average
+Fiat Chrysler,Primary,2013,LT,,,,852653,593554,A/C Efficiency
+Fiat Chrysler,Primary,2013,LT,,,,852653,1502157,A/C Leakage
+Fiat Chrysler,Primary,2013,LT,,,,6730,-190,CH4 Deficit
+Fiat Chrysler,Primary,2013,LT,,338,359,852653,-4044274,Fleet Average
+Fiat Chrysler,Primary,2013,,US,,,,1048689,Transfer
+Ford,Primary,2013,PV,,,,716500,461932,A/C Efficiency
+Ford,Primary,2013,PV,,,,1166975,1237391,A/C Leakage
+Ford,Primary,2013,PV,,,,18551,,Advanced Technology
+Ford,Primary,2013,PV,,,,201807,-12412,CH4 Deficit
+Ford,Primary,2013,PV,,265,247,1166975,4101628,Fleet Average
+Ford,Primary,2013,PV,,`,,11222,-9795,N2O Deficit
+Ford,Primary,2013,LT,,,,1016037,283316,A/C Efficiency
+Ford,Primary,2013,LT,,,,1234018,2069771,A/C Leakage
+Ford,Primary,2013,LT,,,,103,,Advanced Technology
+Ford,Primary,2013,LT,,,,546764,-49342,CH4 Deficit
+Ford,Primary,2013,LT,,355,355,1234018,0,Fleet Average
+Ford,Primary,2013,LT,,,,261005,-252940,N2O Deficit
+GM,Primary,2013,PV,,,,1393351,821301,A/C Efficiency
+GM,Primary,2013,PV,,,,1431320,1775294,A/C Leakage
+GM,Primary,2013,PV,,,,27484,,Advanced Technology
+GM,Primary,2013,PV,,,,376185,-27545,CH4 Deficit
+GM,Primary,2013,PV,,263,263,1432131,0,Fleet Average
+GM,Primary,2013,PV,,,,45511,13330,Off-Cycle
+GM,Primary,2013,LT,,,,897210,417695,A/C Efficiency
+GM,Primary,2013,LT,,,,913765,1519501,A/C Leakage
+GM,Primary,2013,LT,,,,621051,-89000,CH4 Deficit
+GM,Primary,2013,LT,,360,373,913765,-2683038,Fleet Average
+GM,Primary,2013,LT,,,,2134,819,Off-Cycle
+Honda,Primary,2013,PV,,,,,266240,A/C Efficiency
+Honda,Primary,2013,PV,,,,,264375,A/C Leakage
+Honda,Primary,2013,PV,,,,471,,Advanced Technology
+Honda,Primary,2013,PV,,256,228,1021800,5586581,Fleet Average
+Honda,Primary,2013,PV,,,,,-223788,N2O Deficit
+Honda,Primary,2013,LT,,,,,250322,A/C Efficiency
+Honda,Primary,2013,LT,,,,,305581,A/C Leakage
+Honda,Primary,2013,LT,,318,312,472569,640421,Fleet Average
+Hyundai,Primary,2013,PV,,,,1061950,571743,A/C Efficiency
+Hyundai,Primary,2013,PV,,,,1061950,442551,A/C Leakage
+Hyundai,Primary,2013,PV,,261,238,1061950,4769294,Fleet Average
+Hyundai,Primary,2013,LT,,,,38073,32018,A/C Efficiency
+Hyundai,Primary,2013,LT,,,,38073,31025,A/C Leakage
+Hyundai,Primary,2013,LT,,309,317,38073,-68795,Fleet Average
+Hyundai,Primary,2013,,,,,,-169775,Forfeited/Retired
+Jaguar Land Rover,Primary,2013,PV,,,,6641,2305,A/C Efficiency
+Jaguar Land Rover,TLAAS,2013,PV,,,,9410,4475,A/C Efficiency
+Jaguar Land Rover,Primary,2013,PV,,,,6641,3376,A/C Leakage
+Jaguar Land Rover,TLAAS,2013,PV,,,,9410,4983,A/C Leakage
+Jaguar Land Rover,Primary,2013,PV,,287,319,6641,-41496,Fleet Average
+Jaguar Land Rover,TLAAS,2013,PV,,350,358,9410,-14699,Fleet Average
+Jaguar Land Rover,Primary,2013,LT,,,,18068,17255,A/C Efficiency
+Jaguar Land Rover,TLAAS,2013,LT,,,,29464,30310,A/C Efficiency
+Jaguar Land Rover,Primary,2013,LT,,,,18068,24894,A/C Leakage
+Jaguar Land Rover,TLAAS,2013,LT,,,,29464,29018,A/C Leakage
+Jaguar Land Rover,Primary,2013,LT,,306,312,18068,-24486,Fleet Average
+Jaguar Land Rover,TLAAS,2013,LT,,396,477,29464,-539046,Fleet Average
+Kia,Primary,2013,PV,,,,611414,296847,A/C Efficiency
+Kia,Primary,2013,PV,,,,591064,277180,A/C Leakage
+Kia,Primary,2013,PV,,258,252,611414,716323,Fleet Average
+Kia,Primary,2013,LT,,,,16980,13040,A/C Efficiency
+Kia,Primary,2013,LT,,,,16980,19176,A/C Leakage
+Kia,Primary,2013,LT,,303,301,16980,7670,Fleet Average
+Kia,Primary,2013,,,,,,-123956,Forfeited/Retired
+Lotus,TLAAS,2013,PV,,311,334,170,-763,Fleet Average
+Mazda,Primary,2013,PV,,250,232,164862,579449,Fleet Average
+Mazda,Primary,2013,LT,,311,296,61093,206982,Fleet Average
+McLaren,TLAAS,2013,PV,,329,374,412,-3620,Fleet Average
+Mercedes,Primary,2013,PV,,,,207076,207174,A/C Efficiency
+Mercedes,TLAAS,2013,PV,,,,1,6,A/C Efficiency
+Mercedes,Primary,2013,PV,,,,207956,175477,A/C Leakage
+Mercedes,TLAAS,2013,PV,,,,1,5,A/C Leakage
+Mercedes,Primary,2013,PV,,,,880,,Advanced Technology
+Mercedes,Primary,2013,PV,,262,284,207951,-893318,Fleet Average
+Mercedes,TLAAS,2013,PV,,344,322,6,26,Fleet Average
+Mercedes,Primary,2013,LT,,,,66540,73347,A/C Efficiency
+Mercedes,TLAAS,2013,LT,,,,22501,34186,A/C Efficiency
+Mercedes,Primary,2013,LT,,,,66540,102127,A/C Leakage
+Mercedes,TLAAS,2013,LT,,,,22501,30070,A/C Leakage
+Mercedes,Primary,2013,LT,,321,326,60604,-68442,Fleet Average
+Mercedes,TLAAS,2013,LT,,424,430,28437,-38538,Fleet Average
+Mitsubishi,Primary,2013,PV,,249,254,32654,-31881,Fleet Average
+Mitsubishi,Primary,2013,LT,,296,267,13754,90090,Fleet Average
+Nissan,Primary,2013,PV,,,,919647,623973,A/C Efficiency
+Nissan,Primary,2013,PV,,,,205189,38523,A/C Leakage
+Nissan,Primary,2013,PV,,,,26167,,Advanced Technology
+Nissan,Primary,2013,PV,,259,232,919647,4848497,Fleet Average
+Nissan,Primary,2013,LT,,,,372681,189942,A/C Efficiency
+Nissan,Primary,2013,LT,,,,351733,163513,A/C Leakage
+Nissan,Primary,2013,LT,,324,332,372970,-673927,Fleet Average
+Porsche,TLAAS,2013,PV,,314,309,22021,21500,Fleet Average
+Porsche,TLAAS,2013,LT,,410,363,19461,206591,Fleet Average
+Subaru,Primary,2013,PV,,,,,42394,A/C Efficiency
+Subaru,Primary,2013,PV,,251,254,145705,-85353,Fleet Average
+Subaru,Primary,2013,LT,,,,,103128,A/C Efficiency
+Subaru,Primary,2013,LT,,299,270,211326,1384203,Fleet Average
+Suzuki,Primary,2013,PV,,243,266,10427,-46828,Fleet Average
+Suzuki,Primary,2013,LT,,296,330,1116,-8570,Fleet Average
+Tesla,Primary,2013,PV,,,,17813,19826,A/C Efficiency
+Tesla,Primary,2013,PV,,,,17813,,Advanced Technology
+Tesla,Primary,2013,PV,,296,0,17813,1029558,Fleet Average
+Tesla,Primary,2013,,US,,,,-1048689,Transfer
+Toyota,Primary,2013,PV,,,,1347436,1053911,A/C Efficiency
+Toyota,Primary,2013,PV,,,,1347436,816463,A/C Leakage
+Toyota,Primary,2013,PV,,,,829,,Advanced Technology
+Toyota,Primary,2013,PV,,257,224,1347436,8682490,Fleet Average
+Toyota,Primary,2013,LT,,,,915658,677550,A/C Efficiency
+Toyota,Primary,2013,LT,,,,902403,723525,A/C Leakage
+Toyota,Primary,2013,LT,,329,339,915658,-2068151,Fleet Average
+Volkswagen,Primary,2013,PV,,,,,417724,A/C Efficiency
+Volkswagen,Primary,2013,PV,,,,,290530,A/C Leakage
+Volkswagen,Primary,2013,PV,,,,,-57902,CH4 Deficit
+Volkswagen,Primary,2013,PV,,257,265,559448,-873920,Fleet Average
+Volkswagen,Primary,2013,PV,,,,,-150195,N2O Deficit
+Volkswagen,Primary,2013,LT,,,,,80313,A/C Efficiency
+Volkswagen,Primary,2013,LT,,,,,78562,A/C Leakage
+Volkswagen,Primary,2013,LT,,,,,-434,CH4 Deficit
+Volkswagen,Primary,2013,LT,,317,312,68414,77262,Fleet Average
+Volkswagen,Primary,2013,LT,,,,,-10889,N2O Deficit
+Volvo,Primary,2013,PV,,,,42072,30611,A/C Efficiency
+Volvo,Primary,2013,PV,,,,42072,51622,A/C Leakage
+Volvo,Primary,2013,PV,,264,292,42072,-230024,Fleet Average
+Volvo,Primary,2013,LT,,,,31282,25343,A/C Efficiency
+Volvo,Primary,2013,LT,,,,31282,51538,A/C Leakage
+Volvo,Primary,2013,LT,,316,348,31282,-226096,Fleet Average
+Aston Martin,TLAAS,2014,PV,,,,1272,645,A/C Efficiency
+Aston Martin,TLAAS,2014,PV,,,,1272,783,A/C Leakage
+Aston Martin,TLAAS,2014,PV,,324,454,1272,-32289,Fleet Average
+BMW,Primary,2014,PV,,,,297388,231480,A/C Efficiency
+BMW,Primary,2014,PV,,,,297226,256260,A/C Leakage
+BMW,Primary,2014,PV,,,,9895,,Advanced Technology
+BMW,Primary,2014,PV,,,,15968,-4677,CH4 Deficit
+BMW,Primary,2014,PV,,258,256,297388,116138,Fleet Average
+BMW,Primary,2014,PV,,,,15968,-37167,N2O Deficit
+BMW,Primary,2014,PV,,,,297388,183103,Off-Cycle
+BMW,Primary,2014,LT,,,,81938,79580,A/C Efficiency
+BMW,Primary,2014,LT,,,,81938,131203,A/C Leakage
+BMW,Primary,2014,LT,,,,4029,-1365,CH4 Deficit
+BMW,Primary,2014,LT,,313,312,81938,18507,Fleet Average
+BMW,Primary,2014,LT,,,,4029,-10847,N2O Deficit
+BMW,Primary,2014,LT,,,,81938,113537,Off-Cycle
+BYD Motors,Primary,2014,PV,,,,50,,Advanced Technology
+BYD Motors,Primary,2014,PV,,261,0,50,2548,Fleet Average
+Ferrari,TLAAS,2014,PV,,324,484,2301,-71888,Fleet Average
+Ferrari,TLAAS,2014,PV,,,,2301,3408,A/C Leakage
+Ferrari,TLAAS,2014,PV,,,,2301,1746,A/C Efficiency
+Fiat Chrysler,Primary,2014,PV,,,,633065,526044,A/C Efficiency
+Fiat Chrysler,Primary,2014,PV,,,,633882,1113855,A/C Leakage
+Fiat Chrysler,Primary,2014,PV,,,,3404,,Advanced Technology
+Fiat Chrysler,Primary,2014,PV,,,,25775,-755,CH4 Deficit
+Fiat Chrysler,Primary,2014,PV,,262,286,648377,-3038512,Fleet Average
+Fiat Chrysler,Primary,2014,PV,,,,,416894,Off-Cycle
+Fiat Chrysler,Primary,2014,LT,,,,1446365,1313950,A/C Efficiency
+Fiat Chrysler,Primary,2014,LT,,,,1446365,3186801,A/C Leakage
+Fiat Chrysler,Primary,2014,LT,,,,316255,-46268,CH4 Deficit
+Fiat Chrysler,Primary,2014,LT,,327,345,1446365,-5880298,Fleet Average
+Fiat Chrysler,Primary,2014,LT,,,,,2361453,Off-Cycle
+Fiat Chrysler,Primary,2014,,US,,,,1019602,Transfer
+Ford,Primary,2014,PV,,,,876873,518730,A/C Efficiency
+Ford,Primary,2014,PV,,,,1258732,1412435,A/C Leakage
+Ford,Primary,2014,PV,,,,18826,,Advanced Technology
+Ford,Primary,2014,PV,,,,259189,-14512,CH4 Deficit
+Ford,Primary,2014,PV,,254,247,1258732,1720495,Fleet Average
+Ford,Primary,2014,PV,,,,6041,-5272,N2O Deficit
+Ford,Primary,2014,PV,,,,,501470,Off-Cycle
+Ford,Primary,2014,LT,,,,1024234,597121,A/C Efficiency
+Ford,Primary,2014,LT,,,,1075502,1846942,A/C Leakage
+Ford,Primary,2014,LT,,,,498539,-44119,CH4 Deficit
+Ford,Primary,2014,LT,,345,355,1075502,-2429183,Fleet Average
+Ford,Primary,2014,LT,,,,28307,-28579,N2O Deficit
+Ford,Primary,2014,LT,,,,,769099,Off-Cycle
+GM,Primary,2014,PV,,,,1454276,950133,A/C Efficiency
+GM,Primary,2014,PV,,,,1552552,1918074,A/C Leakage
+GM,Primary,2014,PV,,,,25847,,Advanced Technology
+GM,Primary,2014,PV,,,,192022,-14061,CH4 Deficit
+GM,Primary,2014,PV,,254,256,1556701,-607935,Fleet Average
+GM,Primary,2014,PV,,,,10575,-7384,N2O Deficit
+GM,Primary,2014,PV,,,,,228888,Off-Cycle
+GM,Primary,2014,LT,,,,1143432,1066971,A/C Efficiency
+GM,Primary,2014,LT,,,,1164610,1878149,A/C Leakage
+GM,Primary,2014,LT,,,,786583,-43744,CH4 Deficit
+GM,Primary,2014,LT,,357,350,1164610,1841312,Fleet Average
+GM,Primary,2014,LT,,,,,457702,Off-Cycle
+Honda,Primary,2014,PV,,,,868336,241401,A/C Efficiency
+Honda,Primary,2014,PV,,,,863817,225990,A/C Leakage
+Honda,Primary,2014,PV,,,,1635,,Advanced Technology
+Honda,Primary,2014,PV,,250,228,868337,3730209,Fleet Average
+Honda,Primary,2014,PV,,,,792892,164811,Off-Cycle
+Honda,Primary,2014,LT,,,,577828,288562,A/C Efficiency
+Honda,Primary,2014,LT,,,,577828,400850,A/C Leakage
+Honda,Primary,2014,LT,,308,299,577828,1174600,Fleet Average
+Honda,Primary,2014,PV,,,,,-224693,N2O Deficit
+Honda,Primary,2014,LT,,,,316393,239134,Off-Cycle
+Hyundai,Primary,2014,PV,,,,509920,320839,A/C Efficiency
+Hyundai,Primary,2014,PV,,,,509920,199151,A/C Leakage
+Hyundai,Primary,2014,PV,,253,247,509920,597414,Fleet Average
+Hyundai,Primary,2014,PV,,,,424458,59075,Off-Cycle
+Hyundai,Primary,2014,LT,,,,38441,33274,A/C Efficiency
+Hyundai,Primary,2014,LT,,,,38441,24989,A/C Leakage
+Hyundai,Primary,2014,LT,,301,325,38441,-208379,Fleet Average
+Hyundai,Primary,2014,LT,,,,38441,26111,Off-Cycle
+Jaguar Land Rover,TLAAS,2014,PV,,,,12323,12478,A/C Efficiency
+Jaguar Land Rover,TLAAS,2014,PV,,,,12323,15850,A/C Leakage
+Jaguar Land Rover,TLAAS,2014,PV,,335,330,12323,12031,Fleet Average
+Jaguar Land Rover,TLAAS,2014,PV,,,,,5315,Off-Cycle
+Jaguar Land Rover,Primary,2014,LT,,,,26103,33606,A/C Efficiency
+Jaguar Land Rover,TLAAS,2014,LT,,,,29130,35526,A/C Efficiency
+Jaguar Land Rover,Primary,2014,LT,,,,26103,101406,A/C Leakage
+Jaguar Land Rover,TLAAS,2014,LT,,,,29130,107234,A/C Leakage
+Jaguar Land Rover,Primary,2014,LT,,317,334,26103,-100228,Fleet Average
+Jaguar Land Rover,TLAAS,2014,LT,,401,382,29130,125010,Fleet Average
+Jaguar Land Rover,Primary,2014,LT,,,,,32693,Off-Cycle
+Jaguar Land Rover,TLAAS,2014,LT,,,,,36477,Off-Cycle
+Kia,Primary,2014,PV,,,,507627,322330,A/C Efficiency
+Kia,Primary,2014,PV,,,,478225,208197,A/C Leakage
+Kia,Primary,2014,PV,,251,265,507630,-1387706,Fleet Average
+Kia,Primary,2014,PV,,,,430849,88313,Off-Cycle
+Kia,Primary,2014,LT,,,,14783,11353,A/C Efficiency
+Kia,Primary,2014,LT,,,,28757,18904,A/C Leakage
+Kia,Primary,2014,LT,,312,330,28757,-116914,Fleet Average
+Kia,Primary,2014,LT,,,,18801,3428,Off-Cycle
+Lotus,TLAAS,2014,PV,,300,338,280,-2078,Fleet Average
+Mazda,Primary,2014,PV,,251,220,217333,1315557,Fleet Average
+Mazda,Primary,2014,LT,,300,287,78826,231452,Fleet Average
+McLaren,TLAAS,2014,PV,,319,372,279,-2887,Fleet Average
+Mercedes,Primary,2014,PV,,,,271031,285704,A/C Efficiency
+Mercedes,Primary,2014,PV,,,,271031,245585,A/C Leakage
+Mercedes,Primary,2014,PV,,,,3610,,Advanced Technology
+Mercedes,Primary,2014,PV,,257,274,271031,-899684,Fleet Average
+Mercedes,Primary,2014,PV,,,,,139554,Off-Cycle
+Mercedes,Primary,2014,LT,,,,77572,93551,A/C Efficiency
+Mercedes,Primary,2014,LT,,,,77572,123285,A/C Leakage
+Mercedes,Primary,2014,LT,,315,340,77572,-438020,Fleet Average
+Mercedes,Primary,2014,LT,,,,,24078,Off-Cycle
+Mercedes,TLAAS,2014,PV,,,,7095,7403,A/C Efficiency
+Mercedes,TLAAS,2014,PV,,,,7095,6275,A/C Leakage
+Mercedes,TLAAS,2014,PV,,315,284,7095,42947,Fleet Average
+Mercedes,TLAAS,2014,PV,,,,,4295,Off-Cycle
+Mercedes,TLAAS,2014,LT,,,,14740,17978,A/C Efficiency
+Mercedes,TLAAS,2014,LT,,,,14740,15669,A/C Leakage
+Mercedes,TLAAS,2014,LT,,412,433,14740,-69914,Fleet Average
+Mercedes,TLAAS,2014,LT,,,,,154,Off-Cycle
+Mitsubishi,Primary,2014,PV,US,,,219,,Advanced Technology
+Mitsubishi,Primary,2014,PV,,236,224,60679,142181,Fleet Average
+Mitsubishi,Primary,2014,LT,,287,256,29828,208850,Fleet Average
+Nissan,Primary,2014,PV,,,,935995,542001,A/C Efficiency
+Nissan,Primary,2014,PV,,,,935995,414968,A/C Leakage
+Nissan,Primary,2014,PV,,,,10339,,Advanced Technology
+Nissan,Primary,2014,PV,,249,229,935995,3655323,Fleet Average
+Nissan,Primary,2014,PV,,,,,263734,Off-Cycle
+Nissan,Primary,2014,LT,,,,389639,211994,A/C Efficiency
+Nissan,Primary,2014,LT,,,,372762,348923,A/C Leakage
+Nissan,Primary,2014,LT,,318,327,389639,-792052,Fleet Average
+Nissan,Primary,2014,LT,,,,,214182,Off-Cycle
+Subaru,Primary,2014,PV,,,,91419,30379,A/C Efficiency
+Subaru,Primary,2014,PV,,243,250,109078,-149093,Fleet Average
+Subaru,Primary,2014,LT,,,,355975,179565,A/C Efficiency
+Subaru,Primary,2014,LT,,289,254,356818,2820744,Fleet Average
+Subaru,Primary,2014,LT,,,,,1045,Off-Cycle
+Tesla,Primary,2014,PV,,,,17791,19801,A/C Efficiency
+Tesla,Primary,2014,PV,,,,17791,,Advanced Technology
+Tesla,Primary,2014,PV,,288,0,17791,1000495,Fleet Average
+Tesla,Primary,2014,,US,,,,-1019602,Transfer
+Toyota,Primary,2014,PV,,,,1399600,1284578,A/C Efficiency
+Toyota,Primary,2014,PV,,,,1416197,1045084,A/C Leakage
+Toyota,Primary,2014,PV,,,,1218,,Advanced Technology
+Toyota,Primary,2014,PV,,250,221,1420641,8044601,Fleet Average
+Toyota,Primary,2014,PV,,,,,578927,Off-Cycle
+Toyota,Primary,2014,LT,,,,772809,544436,A/C Efficiency
+Toyota,Primary,2014,LT,,,,748830,720037,A/C Leakage
+Toyota,Primary,2014,LT,,326,343,772809,-2967359,Fleet Average
+Toyota,Primary,2014,LT,,,,,567623,Off-Cycle
+Volkswagen,Primary,2014,PV,,,,486657,376957,A/C Efficiency
+Volkswagen,Primary,2014,PV,,,,455689,423705,A/C Leakage
+Volkswagen,Primary,2014,PV,,,,755,,Advanced Technology
+Volkswagen,Primary,2014,PV,,,,,-44575,CH4 Deficit
+Volkswagen,Primary,2014,PV,,250,256,487086,-570662,Fleet Average
+Volkswagen,Primary,2014,PV,,,,,-120381,N2O Deficit
+Volkswagen,Primary,2014,LT,,,,103524,121759,A/C Efficiency
+Volkswagen,Primary,2014,LT,,,,103524,155288,A/C Leakage
+Volkswagen,Primary,2014,LT,,,,,-922,CH4 Deficit
+Volkswagen,Primary,2014,LT,,311,320,103524,-210442,Fleet Average
+Volkswagen,Primary,2014,LT,,,,,-18499,N2O Deficit
+Volvo,Primary,2014,PV,,,,16526,4517,A/C Efficiency
+Volvo,Primary,2014,PV,,,,16526,20330,A/C Leakage
+Volvo,Primary,2014,PV,,258,288,16526,-96808,Fleet Average
+Volvo,Primary,2014,LT,,,,9028,2854,A/C Efficiency
+Volvo,Primary,2014,LT,,,,15063,24902,A/C Leakage
+Volvo,Primary,2014,LT,,307,348,15063,-139490,Fleet Average

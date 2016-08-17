@@ -1,0 +1,10 @@
+[COMPLIANCE PATH]
+COST_BENEFIT= C:\War_Gaming\War_Gaming\bin\FEV_CostBenefit_extraction_all v4.csv  
+NAMEPLATE_BASE_DATA= C:\War_Gaming\War_Gaming\bin\WG_CAFE_BASE.csv
+MDM_MATCHING= C:\War_Gaming\War_Gaming\bin\WG_MATCHING.csv
+OEM_CREDIT_ADJUSTMENT= C:\War_Gaming\War_Gaming\bin\OEM_credit_adjustment.csv
+EPA_CREDIT_REPORT= C:\War_Gaming\War_Gaming\bin\EPA_2014_MY_EPA_ld_ghg_credits_2009_2014.csv
+EPA_CREDIT_PROVISION= 
+NHTSA_CREDIT_REPORT= C:\War_Gaming\War_Gaming\bin\NHTSA_MY_NHTSA_ld_cafe_credit_2008_2014.csv
+NHTSA_CREDIT_PROVISION=
+LOG= 

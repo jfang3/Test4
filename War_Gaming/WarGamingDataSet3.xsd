@@ -1,0 +1,910 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WarGamingDataSet3" targetNamespace="http://tempuri.org/WarGamingDataSet3.xsd" xmlns:mstns="http://tempuri.org/WarGamingDataSet3.xsd" xmlns="http://tempuri.org/WarGamingDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="WarGamingConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="WarGamingConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApplication2.Properties.Settings.GlobalReference.Default.WarGamingConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="2013_CAFETableAdapter" GeneratorDataComponentClassName="_2013_CAFETableAdapter" Name="2013_CAFE" UserDataComponentName="2013_CAFETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="WarGamingConnectionString (Settings)" DbObjectName="WarGaming.dbo.[2013_CAFE]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[2013_CAFE] ([Segment (FEV)], [ICE/xEV], [Brand], [Manufacturer], [Fleet], [Model], [VehicleID], [Engine_ID], [TransmissionID], [Model Year], [Platform], [tempNameplate], [Nameplate], [Sales], [Body Style], [BaseTireCode], [Control_Logic], [Vehicle_Category], [Vehicle Class], [Status], [Brake System], [Vehicle_Subclass], [Regulatory_Subcategory], [Battery_Type], [AC_Refrigerant_Type], [Driveline_System], [Drive_System], [Power_Steering_Type], [HEV_Type], [Transmission_Class], [Vehicle_Code], [Vehicle_Structure], [Light_Truck_Indicator], [US Content], [Canadian_Content], [Mexican_Content], [Domestic_Content], [Vehicle_Country_of_Origin], [Axle_Ratio], [Wheelbase], [Front Track Width], [Rear Track Width], [Footprint], [Running_Clearance], [Front_Axle_Clearance], [Rear_Axle_Clearance], [Angle_of_Approach], [Breakover_Angle], [Angle_of_Departure], [Curb_Weight], [Test_Weight], [Gross_Vehicle_Weight_Rating _], [Towing_Capacity_Maximum ], [Payload], [Cargo_Volume_Behind_Front_Row], [Cargo_Volume_Behind_Second_Row], [Cargo_Volume_Behind_Third_Row], [Enclosed_Volume], [Passenger_Volume], [Cargo_Volume_Index], [Luggage_Capacity], [Seating_Max], [Standard_Rows_of_Seating], [Frontal_Area], [Aerodynamic_Drag_coeffecient_cd], [Coefficient_of_Rolling_Resistance_CRR], [Fuel_Capacity], [Electrical_System_Voltage], [A_C_Refrigerant_Type], [A_C_Compressor_Displacement], [Vehicle_Notes], [Electric_Power], [Voltage_or_Pressure], [Final_Assembly_State_Province], [Final_Assembly_Country], [(Credited) Fuel Economy], [Fuel Type], [Final_Assembly_City], [FE Target], [Liters], [HP], [MPG], [NV], [# FWD Gears], [Has_AC], [HP KW], [IntVolume], [Engine_Type], [EPA MPG], [Length], [Width], [LoadWeight], [ATW], [Transmission_Type], [F95], [F96], [Origin Country ], [Production], [TransmissionID1], [Vehicle Code], [Engine ID], [Fuel Meter Code], [Avg Track Width], [F104], [Platform1], [Assembly City], [Final Assembly Country]) VALUES (@p1, @p4, @Brand, @Manufacturer, @Fleet, @Model, @VehicleID, @Engine_ID, @TransmissionID, @Model_Year, @Platform, @tempNameplate, @Nameplate, @Sales, @Body_Style, @BaseTireCode, @Control_Logic, @Vehicle_Category, @Vehicle_Class, @Status, @Brake_System, @Vehicle_Subclass, @Regulatory_Subcategory, @Battery_Type, @AC_Refrigerant_Type, @Driveline_System, @Drive_System, @Power_Steering_Type, @HEV_Type, @Transmission_Class, @Vehicle_Code, @Vehicle_Structure, @Light_Truck_Indicator, @US_Content, @Canadian_Content, @Mexican_Content, @Domestic_Content, @Vehicle_Country_of_Origin, @Axle_Ratio, @Wheelbase, @Front_Track_Width, @Rear_Track_Width, @Footprint, @Running_Clearance, @Front_Axle_Clearance, @Rear_Axle_Clearance, @Angle_of_Approach, @Breakover_Angle, @Angle_of_Departure, @Curb_Weight, @Test_Weight, @Gross_Vehicle_Weight_Rating__, @Towing_Capacity_Maximum_, @Payload, @Cargo_Volume_Behind_Front_Row, @Cargo_Volume_Behind_Second_Row, @Cargo_Volume_Behind_Third_Row, @Enclosed_Volume, @Passenger_Volume, @Cargo_Volume_Index, @Luggage_Capacity, @Seating_Max, @Standard_Rows_of_Seating, @Frontal_Area, @Aerodynamic_Drag_coeffecient_cd, @Coefficient_of_Rolling_Resistance_CRR, @Fuel_Capacity, @Electrical_System_Voltage, @A_C_Refrigerant_Type, @A_C_Compressor_Displacement, @Vehicle_Notes, @Electric_Power, @Voltage_or_Pressure, @Final_Assembly_State_Province, @Final_Assembly_Country, @p7, @Fuel_Type, @Final_Assembly_City, @FE_Target, @Liters, @HP, @MPG, @NV, @#_FWD_Gears, @Has_AC, @HP_KW, @IntVolume, @Engine_Type, @EPA_MPG, @Length, @Width, @LoadWeight, @ATW, @Transmission_Type, @F95, @F96, @Origin_Country_, @Production, @TransmissionID1, @p10, @p13, @Fuel_Meter_Code, @Avg_Track_Width, @F104, @Platform1, @Assembly_City, @p16)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Segment (FEV)" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ICE/xEV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Brand" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Brand" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Manufacturer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Manufacturer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Fleet" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Fleet" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Model" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Model" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@VehicleID" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="VehicleID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Engine_ID" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Engine_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TransmissionID" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TransmissionID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Model_Year" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Model Year" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Platform" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Platform" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@tempNameplate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="tempNameplate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Nameplate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Nameplate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Sales" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Sales" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Body_Style" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Body Style" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BaseTireCode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BaseTireCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Control_Logic" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Control_Logic" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Vehicle_Category" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Vehicle_Category" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Vehicle_Class" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Vehicle Class" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Status" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Status" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Brake_System" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Brake System" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Vehicle_Subclass" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Vehicle_Subclass" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Regulatory_Subcategory" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Regulatory_Subcategory" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Battery_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Battery_Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@AC_Refrigerant_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="AC_Refrigerant_Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Driveline_System" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Driveline_System" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Drive_System" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Drive_System" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Power_Steering_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Power_Steering_Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HEV_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HEV_Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Transmission_Class" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Transmission_Class" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Vehicle_Code" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Vehicle_Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Vehicle_Structure" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Vehicle_Structure" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Light_Truck_Indicator" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Light_Truck_Indicator" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@US_Content" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="US Content" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Canadian_Content" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Canadian_Content" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Mexican_Content" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Mexican_Content" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Domestic_Content" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Domestic_Content" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Vehicle_Country_of_Origin" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Vehicle_Country_of_Origin" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Axle_Ratio" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Axle_Ratio" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Wheelbase" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Wheelbase" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Front_Track_Width" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Front Track Width" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Rear_Track_Width" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Rear Track Width" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Footprint" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Footprint" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Running_Clearance" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Running_Clearance" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Front_Axle_Clearance" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Front_Axle_Clearance" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Rear_Axle_Clearance" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Rear_Axle_Clearance" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Angle_of_Approach" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Angle_of_Approach" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Breakover_Angle" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Breakover_Angle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Angle_of_Departure" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Angle_of_Departure" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Curb_Weight" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Curb_Weight" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Test_Weight" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Test_Weight" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Gross_Vehicle_Weight_Rating__" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Gross_Vehicle_Weight_Rating _" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Towing_Capacity_Maximum_" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Towing_Capacity_Maximum " SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Payload" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Payload" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Cargo_Volume_Behind_Front_Row" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Cargo_Volume_Behind_Front_Row" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Cargo_Volume_Behind_Second_Row" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Cargo_Volume_Behind_Second_Row" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Cargo_Volume_Behind_Third_Row" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Cargo_Volume_Behind_Third_Row" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Enclosed_Volume" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Enclosed_Volume" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Passenger_Volume" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Passenger_Volume" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Cargo_Volume_Index" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Cargo_Volume_Index" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Luggage_Capacity" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Luggage_Capacity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Seating_Max" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Seating_Max" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Standard_Rows_of_Seating" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Standard_Rows_of_Seating" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Frontal_Area" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Frontal_Area" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Aerodynamic_Drag_coeffecient_cd" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Aerodynamic_Drag_coeffecient_cd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Coefficient_of_Rolling_Resistance_CRR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Coefficient_of_Rolling_Resistance_CRR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Fuel_Capacity" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Fuel_Capacity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Electrical_System_Voltage" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Electrical_System_Voltage" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@A_C_Refrigerant_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="A_C_Refrigerant_Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@A_C_Compressor_Displacement" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="A_C_Compressor_Displacement" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Vehicle_Notes" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Vehicle_Notes" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Electric_Power" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Electric_Power" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Voltage_or_Pressure" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Voltage_or_Pressure" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Final_Assembly_State_Province" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Final_Assembly_State_Province" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Final_Assembly_Country" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Final_Assembly_Country" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@p7" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="(Credited) Fuel Economy" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Fuel_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Fuel Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Final_Assembly_City" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Final_Assembly_City" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@FE_Target" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="FE Target" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Liters" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Liters" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@HP" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="HP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@MPG" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="MPG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NV" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@#_FWD_Gears" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="# FWD Gears" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Has_AC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Has_AC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@HP_KW" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="HP KW" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@IntVolume" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IntVolume" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Engine_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Engine_Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@EPA_MPG" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EPA MPG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Length" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Length" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Width" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Width" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LoadWeight" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LoadWeight" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@ATW" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="ATW" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Transmission_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Transmission_Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@F95" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="F95" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@F96" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="F96" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Origin_Country_" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Origin Country " SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Production" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Production" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TransmissionID1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TransmissionID1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p10" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Vehicle Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p13" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Engine ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Fuel_Meter_Code" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Fuel Meter Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Avg_Track_Width" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Avg Track Width" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@F104" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="F104" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Platform1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Platform1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Assembly_City" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Assembly City" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p16" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Final Assembly Country" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Segment (FEV)], [ICE/xEV], Brand, Manufacturer, Fleet, Model, VehicleID, Engine_ID, TransmissionID, [Model Year], Platform, tempNameplate, Nameplate, Sales, [Body Style], BaseTireCode, Control_Logic, Vehicle_Category, [Vehicle Class], Status, [Brake System], Vehicle_Subclass, Regulatory_Subcategory, Battery_Type, AC_Refrigerant_Type, Driveline_System, Drive_System, Power_Steering_Type, HEV_Type, Transmission_Class, Vehicle_Code, Vehicle_Structure, Light_Truck_Indicator, [US Content], Canadian_Content, Mexican_Content, Domestic_Content, Vehicle_Country_of_Origin, Axle_Ratio, Wheelbase, [Front Track Width], [Rear Track Width], Footprint, Running_Clearance, Front_Axle_Clearance, Rear_Axle_Clearance, Angle_of_Approach, Breakover_Angle, Angle_of_Departure, Curb_Weight, Test_Weight, [Gross_Vehicle_Weight_Rating _], [Towing_Capacity_Maximum ], Payload, Cargo_Volume_Behind_Front_Row, Cargo_Volume_Behind_Second_Row, Cargo_Volume_Behind_Third_Row, Enclosed_Volume, Passenger_Volume, Cargo_Volume_Index, Luggage_Capacity, Seating_Max, Standard_Rows_of_Seating, Frontal_Area, Aerodynamic_Drag_coeffecient_cd, Coefficient_of_Rolling_Resistance_CRR, Fuel_Capacity, Electrical_System_Voltage, A_C_Refrigerant_Type, A_C_Compressor_Displacement, Vehicle_Notes, Electric_Power, Voltage_or_Pressure, Final_Assembly_State_Province, Final_Assembly_Country, [(Credited) Fuel Economy], [Fuel Type], Final_Assembly_City, [FE Target], Liters, HP, MPG, NV, [# FWD Gears], Has_AC, [HP KW], IntVolume, Engine_Type, [EPA MPG], Length, Width, LoadWeight, ATW, Transmission_Type, F95, F96, [Origin Country ], Production, TransmissionID1, [Vehicle Code], [Engine ID], [Fuel Meter Code], [Avg Track Width], F104, Platform1, [Assembly City], [Final Assembly Country] FROM dbo.[2013_CAFE]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Segment (FEV)" DataSetColumn="Segment (FEV)" />
+              <Mapping SourceColumn="ICE/xEV" DataSetColumn="ICE/xEV" />
+              <Mapping SourceColumn="Brand" DataSetColumn="Brand" />
+              <Mapping SourceColumn="Manufacturer" DataSetColumn="Manufacturer" />
+              <Mapping SourceColumn="Fleet" DataSetColumn="Fleet" />
+              <Mapping SourceColumn="Model" DataSetColumn="Model" />
+              <Mapping SourceColumn="VehicleID" DataSetColumn="VehicleID" />
+              <Mapping SourceColumn="Engine_ID" DataSetColumn="Engine_ID" />
+              <Mapping SourceColumn="TransmissionID" DataSetColumn="TransmissionID" />
+              <Mapping SourceColumn="Model Year" DataSetColumn="Model Year" />
+              <Mapping SourceColumn="Platform" DataSetColumn="Platform" />
+              <Mapping SourceColumn="tempNameplate" DataSetColumn="tempNameplate" />
+              <Mapping SourceColumn="Nameplate" DataSetColumn="Nameplate" />
+              <Mapping SourceColumn="Sales" DataSetColumn="Sales" />
+              <Mapping SourceColumn="Body Style" DataSetColumn="Body Style" />
+              <Mapping SourceColumn="BaseTireCode" DataSetColumn="BaseTireCode" />
+              <Mapping SourceColumn="Control_Logic" DataSetColumn="Control_Logic" />
+              <Mapping SourceColumn="Vehicle_Category" DataSetColumn="Vehicle_Category" />
+              <Mapping SourceColumn="Vehicle Class" DataSetColumn="Vehicle Class" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="Brake System" DataSetColumn="Brake System" />
+              <Mapping SourceColumn="Vehicle_Subclass" DataSetColumn="Vehicle_Subclass" />
+              <Mapping SourceColumn="Regulatory_Subcategory" DataSetColumn="Regulatory_Subcategory" />
+              <Mapping SourceColumn="Battery_Type" DataSetColumn="Battery_Type" />
+              <Mapping SourceColumn="AC_Refrigerant_Type" DataSetColumn="AC_Refrigerant_Type" />
+              <Mapping SourceColumn="Driveline_System" DataSetColumn="Driveline_System" />
+              <Mapping SourceColumn="Drive_System" DataSetColumn="Drive_System" />
+              <Mapping SourceColumn="Power_Steering_Type" DataSetColumn="Power_Steering_Type" />
+              <Mapping SourceColumn="HEV_Type" DataSetColumn="HEV_Type" />
+              <Mapping SourceColumn="Transmission_Class" DataSetColumn="Transmission_Class" />
+              <Mapping SourceColumn="Vehicle_Code" DataSetColumn="Vehicle_Code" />
+              <Mapping SourceColumn="Vehicle_Structure" DataSetColumn="Vehicle_Structure" />
+              <Mapping SourceColumn="Light_Truck_Indicator" DataSetColumn="Light_Truck_Indicator" />
+              <Mapping SourceColumn="US Content" DataSetColumn="US Content" />
+              <Mapping SourceColumn="Canadian_Content" DataSetColumn="Canadian_Content" />
+              <Mapping SourceColumn="Mexican_Content" DataSetColumn="Mexican_Content" />
+              <Mapping SourceColumn="Domestic_Content" DataSetColumn="Domestic_Content" />
+              <Mapping SourceColumn="Vehicle_Country_of_Origin" DataSetColumn="Vehicle_Country_of_Origin" />
+              <Mapping SourceColumn="Axle_Ratio" DataSetColumn="Axle_Ratio" />
+              <Mapping SourceColumn="Wheelbase" DataSetColumn="Wheelbase" />
+              <Mapping SourceColumn="Front Track Width" DataSetColumn="Front Track Width" />
+              <Mapping SourceColumn="Rear Track Width" DataSetColumn="Rear Track Width" />
+              <Mapping SourceColumn="Footprint" DataSetColumn="Footprint" />
+              <Mapping SourceColumn="Running_Clearance" DataSetColumn="Running_Clearance" />
+              <Mapping SourceColumn="Front_Axle_Clearance" DataSetColumn="Front_Axle_Clearance" />
+              <Mapping SourceColumn="Rear_Axle_Clearance" DataSetColumn="Rear_Axle_Clearance" />
+              <Mapping SourceColumn="Angle_of_Approach" DataSetColumn="Angle_of_Approach" />
+              <Mapping SourceColumn="Breakover_Angle" DataSetColumn="Breakover_Angle" />
+              <Mapping SourceColumn="Angle_of_Departure" DataSetColumn="Angle_of_Departure" />
+              <Mapping SourceColumn="Curb_Weight" DataSetColumn="Curb_Weight" />
+              <Mapping SourceColumn="Test_Weight" DataSetColumn="Test_Weight" />
+              <Mapping SourceColumn="Gross_Vehicle_Weight_Rating _" DataSetColumn="Gross_Vehicle_Weight_Rating _" />
+              <Mapping SourceColumn="Towing_Capacity_Maximum " DataSetColumn="Towing_Capacity_Maximum " />
+              <Mapping SourceColumn="Payload" DataSetColumn="Payload" />
+              <Mapping SourceColumn="Cargo_Volume_Behind_Front_Row" DataSetColumn="Cargo_Volume_Behind_Front_Row" />
+              <Mapping SourceColumn="Cargo_Volume_Behind_Second_Row" DataSetColumn="Cargo_Volume_Behind_Second_Row" />
+              <Mapping SourceColumn="Cargo_Volume_Behind_Third_Row" DataSetColumn="Cargo_Volume_Behind_Third_Row" />
+              <Mapping SourceColumn="Enclosed_Volume" DataSetColumn="Enclosed_Volume" />
+              <Mapping SourceColumn="Passenger_Volume" DataSetColumn="Passenger_Volume" />
+              <Mapping SourceColumn="Cargo_Volume_Index" DataSetColumn="Cargo_Volume_Index" />
+              <Mapping SourceColumn="Luggage_Capacity" DataSetColumn="Luggage_Capacity" />
+              <Mapping SourceColumn="Seating_Max" DataSetColumn="Seating_Max" />
+              <Mapping SourceColumn="Standard_Rows_of_Seating" DataSetColumn="Standard_Rows_of_Seating" />
+              <Mapping SourceColumn="Frontal_Area" DataSetColumn="Frontal_Area" />
+              <Mapping SourceColumn="Aerodynamic_Drag_coeffecient_cd" DataSetColumn="Aerodynamic_Drag_coeffecient_cd" />
+              <Mapping SourceColumn="Coefficient_of_Rolling_Resistance_CRR" DataSetColumn="Coefficient_of_Rolling_Resistance_CRR" />
+              <Mapping SourceColumn="Fuel_Capacity" DataSetColumn="Fuel_Capacity" />
+              <Mapping SourceColumn="Electrical_System_Voltage" DataSetColumn="Electrical_System_Voltage" />
+              <Mapping SourceColumn="A_C_Refrigerant_Type" DataSetColumn="A_C_Refrigerant_Type" />
+              <Mapping SourceColumn="A_C_Compressor_Displacement" DataSetColumn="A_C_Compressor_Displacement" />
+              <Mapping SourceColumn="Vehicle_Notes" DataSetColumn="Vehicle_Notes" />
+              <Mapping SourceColumn="Electric_Power" DataSetColumn="Electric_Power" />
+              <Mapping SourceColumn="Voltage_or_Pressure" DataSetColumn="Voltage_or_Pressure" />
+              <Mapping SourceColumn="Final_Assembly_State_Province" DataSetColumn="Final_Assembly_State_Province" />
+              <Mapping SourceColumn="Final_Assembly_Country" DataSetColumn="Final_Assembly_Country" />
+              <Mapping SourceColumn="(Credited) Fuel Economy" DataSetColumn="(Credited) Fuel Economy" />
+              <Mapping SourceColumn="Fuel Type" DataSetColumn="Fuel Type" />
+              <Mapping SourceColumn="Final_Assembly_City" DataSetColumn="Final_Assembly_City" />
+              <Mapping SourceColumn="FE Target" DataSetColumn="FE Target" />
+              <Mapping SourceColumn="Liters" DataSetColumn="Liters" />
+              <Mapping SourceColumn="HP" DataSetColumn="HP" />
+              <Mapping SourceColumn="MPG" DataSetColumn="MPG" />
+              <Mapping SourceColumn="NV" DataSetColumn="NV" />
+              <Mapping SourceColumn="# FWD Gears" DataSetColumn="# FWD Gears" />
+              <Mapping SourceColumn="Has_AC" DataSetColumn="Has_AC" />
+              <Mapping SourceColumn="HP KW" DataSetColumn="HP KW" />
+              <Mapping SourceColumn="IntVolume" DataSetColumn="IntVolume" />
+              <Mapping SourceColumn="Engine_Type" DataSetColumn="Engine_Type" />
+              <Mapping SourceColumn="EPA MPG" DataSetColumn="EPA MPG" />
+              <Mapping SourceColumn="Length" DataSetColumn="Length" />
+              <Mapping SourceColumn="Width" DataSetColumn="Width" />
+              <Mapping SourceColumn="LoadWeight" DataSetColumn="LoadWeight" />
+              <Mapping SourceColumn="ATW" DataSetColumn="ATW" />
+              <Mapping SourceColumn="Transmission_Type" DataSetColumn="Transmission_Type" />
+              <Mapping SourceColumn="F95" DataSetColumn="F95" />
+              <Mapping SourceColumn="F96" DataSetColumn="F96" />
+              <Mapping SourceColumn="Origin Country " DataSetColumn="Origin Country " />
+              <Mapping SourceColumn="Production" DataSetColumn="Production" />
+              <Mapping SourceColumn="TransmissionID1" DataSetColumn="TransmissionID1" />
+              <Mapping SourceColumn="Vehicle Code" DataSetColumn="Vehicle Code" />
+              <Mapping SourceColumn="Engine ID" DataSetColumn="Engine ID" />
+              <Mapping SourceColumn="Fuel Meter Code" DataSetColumn="Fuel Meter Code" />
+              <Mapping SourceColumn="Avg Track Width" DataSetColumn="Avg Track Width" />
+              <Mapping SourceColumn="F104" DataSetColumn="F104" />
+              <Mapping SourceColumn="Platform1" DataSetColumn="Platform1" />
+              <Mapping SourceColumn="Assembly City" DataSetColumn="Assembly City" />
+              <Mapping SourceColumn="Final Assembly Country" DataSetColumn="Final Assembly Country" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WarGamingDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="WarGamingDataSet3" msprop:Generator_UserDSName="WarGamingDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="_x0032_013_CAFE" msprop:Generator_TableClassName="_2013_CAFEDataTable" msprop:Generator_TableVarName="table2013_CAFE" msprop:Generator_TablePropName="_2013_CAFE" msprop:Generator_RowDeletingName="_2013_CAFERowDeleting" msprop:Generator_RowChangingName="_2013_CAFERowChanging" msprop:Generator_RowEvHandlerName="_2013_CAFERowChangeEventHandler" msprop:Generator_RowDeletedName="_2013_CAFERowDeleted" msprop:Generator_UserTableName="2013_CAFE" msprop:Generator_RowChangedName="_2013_CAFERowChanged" msprop:Generator_RowEvArgName="_2013_CAFERowChangeEvent" msprop:Generator_RowClassName="_2013_CAFERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Segment_x0020__x0028_FEV_x0029_" msprop:Generator_ColumnVarNameInTable="_columnSegment__FEV_" msprop:Generator_ColumnPropNameInRow="_Segment__FEV_" msprop:Generator_ColumnPropNameInTable="_Segment__FEV_Column" msprop:Generator_UserColumnName="Segment (FEV)" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ICE_x002F_xEV" msprop:Generator_ColumnVarNameInTable="_columnICE_xEV" msprop:Generator_ColumnPropNameInRow="_ICE_xEV" msprop:Generator_ColumnPropNameInTable="_ICE_xEVColumn" msprop:Generator_UserColumnName="ICE/xEV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Brand" msprop:Generator_ColumnVarNameInTable="columnBrand" msprop:Generator_ColumnPropNameInRow="Brand" msprop:Generator_ColumnPropNameInTable="BrandColumn" msprop:Generator_UserColumnName="Brand" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Manufacturer" msprop:Generator_ColumnVarNameInTable="columnManufacturer" msprop:Generator_ColumnPropNameInRow="Manufacturer" msprop:Generator_ColumnPropNameInTable="ManufacturerColumn" msprop:Generator_UserColumnName="Manufacturer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fleet" msprop:Generator_ColumnVarNameInTable="columnFleet" msprop:Generator_ColumnPropNameInRow="Fleet" msprop:Generator_ColumnPropNameInTable="FleetColumn" msprop:Generator_UserColumnName="Fleet" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Model" msprop:Generator_ColumnVarNameInTable="columnModel" msprop:Generator_ColumnPropNameInRow="Model" msprop:Generator_ColumnPropNameInTable="ModelColumn" msprop:Generator_UserColumnName="Model" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VehicleID" msprop:Generator_ColumnVarNameInTable="columnVehicleID" msprop:Generator_ColumnPropNameInRow="VehicleID" msprop:Generator_ColumnPropNameInTable="VehicleIDColumn" msprop:Generator_UserColumnName="VehicleID" type="xs:double" minOccurs="0" />
+              <xs:element name="Engine_ID" msprop:Generator_ColumnVarNameInTable="columnEngine_ID" msprop:Generator_ColumnPropNameInRow="Engine_ID" msprop:Generator_ColumnPropNameInTable="Engine_IDColumn" msprop:Generator_UserColumnName="Engine_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TransmissionID" msprop:Generator_ColumnVarNameInTable="columnTransmissionID" msprop:Generator_ColumnPropNameInRow="TransmissionID" msprop:Generator_ColumnPropNameInTable="TransmissionIDColumn" msprop:Generator_UserColumnName="TransmissionID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Model_x0020_Year" msprop:Generator_ColumnVarNameInTable="columnModel_Year" msprop:Generator_ColumnPropNameInRow="Model_Year" msprop:Generator_ColumnPropNameInTable="Model_YearColumn" msprop:Generator_UserColumnName="Model Year" type="xs:double" minOccurs="0" />
+              <xs:element name="Platform" msprop:Generator_ColumnVarNameInTable="columnPlatform" msprop:Generator_ColumnPropNameInRow="Platform" msprop:Generator_ColumnPropNameInTable="PlatformColumn" msprop:Generator_UserColumnName="Platform" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tempNameplate" msprop:Generator_ColumnVarNameInTable="columntempNameplate" msprop:Generator_ColumnPropNameInRow="tempNameplate" msprop:Generator_ColumnPropNameInTable="tempNameplateColumn" msprop:Generator_UserColumnName="tempNameplate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nameplate" msprop:Generator_ColumnVarNameInTable="columnNameplate" msprop:Generator_ColumnPropNameInRow="Nameplate" msprop:Generator_ColumnPropNameInTable="NameplateColumn" msprop:Generator_UserColumnName="Nameplate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sales" msprop:Generator_ColumnVarNameInTable="columnSales" msprop:Generator_ColumnPropNameInRow="Sales" msprop:Generator_ColumnPropNameInTable="SalesColumn" msprop:Generator_UserColumnName="Sales" type="xs:double" minOccurs="0" />
+              <xs:element name="Body_x0020_Style" msprop:Generator_ColumnVarNameInTable="columnBody_Style" msprop:Generator_ColumnPropNameInRow="Body_Style" msprop:Generator_ColumnPropNameInTable="Body_StyleColumn" msprop:Generator_UserColumnName="Body Style" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BaseTireCode" msprop:Generator_ColumnVarNameInTable="columnBaseTireCode" msprop:Generator_ColumnPropNameInRow="BaseTireCode" msprop:Generator_ColumnPropNameInTable="BaseTireCodeColumn" msprop:Generator_UserColumnName="BaseTireCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Control_Logic" msprop:Generator_ColumnVarNameInTable="columnControl_Logic" msprop:Generator_ColumnPropNameInRow="Control_Logic" msprop:Generator_ColumnPropNameInTable="Control_LogicColumn" msprop:Generator_UserColumnName="Control_Logic" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_Category" msprop:Generator_ColumnVarNameInTable="columnVehicle_Category" msprop:Generator_ColumnPropNameInRow="Vehicle_Category" msprop:Generator_ColumnPropNameInTable="Vehicle_CategoryColumn" msprop:Generator_UserColumnName="Vehicle_Category" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_x0020_Class" msprop:Generator_ColumnVarNameInTable="columnVehicle_Class" msprop:Generator_ColumnPropNameInRow="Vehicle_Class" msprop:Generator_ColumnPropNameInTable="Vehicle_ClassColumn" msprop:Generator_UserColumnName="Vehicle Class" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Brake_x0020_System" msprop:Generator_ColumnVarNameInTable="columnBrake_System" msprop:Generator_ColumnPropNameInRow="Brake_System" msprop:Generator_ColumnPropNameInTable="Brake_SystemColumn" msprop:Generator_UserColumnName="Brake System" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_Subclass" msprop:Generator_ColumnVarNameInTable="columnVehicle_Subclass" msprop:Generator_ColumnPropNameInRow="Vehicle_Subclass" msprop:Generator_ColumnPropNameInTable="Vehicle_SubclassColumn" msprop:Generator_UserColumnName="Vehicle_Subclass" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Regulatory_Subcategory" msprop:Generator_ColumnVarNameInTable="columnRegulatory_Subcategory" msprop:Generator_ColumnPropNameInRow="Regulatory_Subcategory" msprop:Generator_ColumnPropNameInTable="Regulatory_SubcategoryColumn" msprop:Generator_UserColumnName="Regulatory_Subcategory" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Battery_Type" msprop:Generator_ColumnVarNameInTable="columnBattery_Type" msprop:Generator_ColumnPropNameInRow="Battery_Type" msprop:Generator_ColumnPropNameInTable="Battery_TypeColumn" msprop:Generator_UserColumnName="Battery_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AC_Refrigerant_Type" msprop:Generator_ColumnVarNameInTable="columnAC_Refrigerant_Type" msprop:Generator_ColumnPropNameInRow="AC_Refrigerant_Type" msprop:Generator_ColumnPropNameInTable="AC_Refrigerant_TypeColumn" msprop:Generator_UserColumnName="AC_Refrigerant_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Driveline_System" msprop:Generator_ColumnVarNameInTable="columnDriveline_System" msprop:Generator_ColumnPropNameInRow="Driveline_System" msprop:Generator_ColumnPropNameInTable="Driveline_SystemColumn" msprop:Generator_UserColumnName="Driveline_System" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Drive_System" msprop:Generator_ColumnVarNameInTable="columnDrive_System" msprop:Generator_ColumnPropNameInRow="Drive_System" msprop:Generator_ColumnPropNameInTable="Drive_SystemColumn" msprop:Generator_UserColumnName="Drive_System" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Power_Steering_Type" msprop:Generator_ColumnVarNameInTable="columnPower_Steering_Type" msprop:Generator_ColumnPropNameInRow="Power_Steering_Type" msprop:Generator_ColumnPropNameInTable="Power_Steering_TypeColumn" msprop:Generator_UserColumnName="Power_Steering_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEV_Type" msprop:Generator_ColumnVarNameInTable="columnHEV_Type" msprop:Generator_ColumnPropNameInRow="HEV_Type" msprop:Generator_ColumnPropNameInTable="HEV_TypeColumn" msprop:Generator_UserColumnName="HEV_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Transmission_Class" msprop:Generator_ColumnVarNameInTable="columnTransmission_Class" msprop:Generator_ColumnPropNameInRow="Transmission_Class" msprop:Generator_ColumnPropNameInTable="Transmission_ClassColumn" msprop:Generator_UserColumnName="Transmission_Class" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_Code" msprop:Generator_ColumnVarNameInTable="columnVehicle_Code" msprop:Generator_ColumnPropNameInRow="Vehicle_Code" msprop:Generator_ColumnPropNameInTable="Vehicle_CodeColumn" msprop:Generator_UserColumnName="Vehicle_Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_Structure" msprop:Generator_ColumnVarNameInTable="columnVehicle_Structure" msprop:Generator_ColumnPropNameInRow="Vehicle_Structure" msprop:Generator_ColumnPropNameInTable="Vehicle_StructureColumn" msprop:Generator_UserColumnName="Vehicle_Structure" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Light_Truck_Indicator" msprop:Generator_ColumnVarNameInTable="columnLight_Truck_Indicator" msprop:Generator_ColumnPropNameInRow="Light_Truck_Indicator" msprop:Generator_ColumnPropNameInTable="Light_Truck_IndicatorColumn" msprop:Generator_UserColumnName="Light_Truck_Indicator" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="US_x0020_Content" msprop:Generator_ColumnVarNameInTable="columnUS_Content" msprop:Generator_ColumnPropNameInRow="US_Content" msprop:Generator_ColumnPropNameInTable="US_ContentColumn" msprop:Generator_UserColumnName="US Content" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Canadian_Content" msprop:Generator_ColumnVarNameInTable="columnCanadian_Content" msprop:Generator_ColumnPropNameInRow="Canadian_Content" msprop:Generator_ColumnPropNameInTable="Canadian_ContentColumn" msprop:Generator_UserColumnName="Canadian_Content" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mexican_Content" msprop:Generator_ColumnVarNameInTable="columnMexican_Content" msprop:Generator_ColumnPropNameInRow="Mexican_Content" msprop:Generator_ColumnPropNameInTable="Mexican_ContentColumn" msprop:Generator_UserColumnName="Mexican_Content" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Domestic_Content" msprop:Generator_ColumnVarNameInTable="columnDomestic_Content" msprop:Generator_ColumnPropNameInRow="Domestic_Content" msprop:Generator_ColumnPropNameInTable="Domestic_ContentColumn" msprop:Generator_UserColumnName="Domestic_Content" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_Country_of_Origin" msprop:Generator_ColumnVarNameInTable="columnVehicle_Country_of_Origin" msprop:Generator_ColumnPropNameInRow="Vehicle_Country_of_Origin" msprop:Generator_ColumnPropNameInTable="Vehicle_Country_of_OriginColumn" msprop:Generator_UserColumnName="Vehicle_Country_of_Origin" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Axle_Ratio" msprop:Generator_ColumnVarNameInTable="columnAxle_Ratio" msprop:Generator_ColumnPropNameInRow="Axle_Ratio" msprop:Generator_ColumnPropNameInTable="Axle_RatioColumn" msprop:Generator_UserColumnName="Axle_Ratio" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Wheelbase" msprop:Generator_ColumnVarNameInTable="columnWheelbase" msprop:Generator_ColumnPropNameInRow="Wheelbase" msprop:Generator_ColumnPropNameInTable="WheelbaseColumn" msprop:Generator_UserColumnName="Wheelbase" type="xs:double" minOccurs="0" />
+              <xs:element name="Front_x0020_Track_x0020_Width" msprop:Generator_ColumnVarNameInTable="columnFront_Track_Width" msprop:Generator_ColumnPropNameInRow="Front_Track_Width" msprop:Generator_ColumnPropNameInTable="Front_Track_WidthColumn" msprop:Generator_UserColumnName="Front Track Width" type="xs:double" minOccurs="0" />
+              <xs:element name="Rear_x0020_Track_x0020_Width" msprop:Generator_ColumnVarNameInTable="columnRear_Track_Width" msprop:Generator_ColumnPropNameInRow="Rear_Track_Width" msprop:Generator_ColumnPropNameInTable="Rear_Track_WidthColumn" msprop:Generator_UserColumnName="Rear Track Width" type="xs:double" minOccurs="0" />
+              <xs:element name="Footprint" msprop:Generator_ColumnVarNameInTable="columnFootprint" msprop:Generator_ColumnPropNameInRow="Footprint" msprop:Generator_ColumnPropNameInTable="FootprintColumn" msprop:Generator_UserColumnName="Footprint" type="xs:double" minOccurs="0" />
+              <xs:element name="Running_Clearance" msprop:Generator_ColumnVarNameInTable="columnRunning_Clearance" msprop:Generator_ColumnPropNameInRow="Running_Clearance" msprop:Generator_ColumnPropNameInTable="Running_ClearanceColumn" msprop:Generator_UserColumnName="Running_Clearance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Front_Axle_Clearance" msprop:Generator_ColumnVarNameInTable="columnFront_Axle_Clearance" msprop:Generator_ColumnPropNameInRow="Front_Axle_Clearance" msprop:Generator_ColumnPropNameInTable="Front_Axle_ClearanceColumn" msprop:Generator_UserColumnName="Front_Axle_Clearance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Rear_Axle_Clearance" msprop:Generator_ColumnVarNameInTable="columnRear_Axle_Clearance" msprop:Generator_ColumnPropNameInRow="Rear_Axle_Clearance" msprop:Generator_ColumnPropNameInTable="Rear_Axle_ClearanceColumn" msprop:Generator_UserColumnName="Rear_Axle_Clearance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Angle_of_Approach" msprop:Generator_ColumnVarNameInTable="columnAngle_of_Approach" msprop:Generator_ColumnPropNameInRow="Angle_of_Approach" msprop:Generator_ColumnPropNameInTable="Angle_of_ApproachColumn" msprop:Generator_UserColumnName="Angle_of_Approach" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Breakover_Angle" msprop:Generator_ColumnVarNameInTable="columnBreakover_Angle" msprop:Generator_ColumnPropNameInRow="Breakover_Angle" msprop:Generator_ColumnPropNameInTable="Breakover_AngleColumn" msprop:Generator_UserColumnName="Breakover_Angle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Angle_of_Departure" msprop:Generator_ColumnVarNameInTable="columnAngle_of_Departure" msprop:Generator_ColumnPropNameInRow="Angle_of_Departure" msprop:Generator_ColumnPropNameInTable="Angle_of_DepartureColumn" msprop:Generator_UserColumnName="Angle_of_Departure" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Curb_Weight" msprop:Generator_ColumnVarNameInTable="columnCurb_Weight" msprop:Generator_ColumnPropNameInRow="Curb_Weight" msprop:Generator_ColumnPropNameInTable="Curb_WeightColumn" msprop:Generator_UserColumnName="Curb_Weight" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Test_Weight" msprop:Generator_ColumnVarNameInTable="columnTest_Weight" msprop:Generator_ColumnPropNameInRow="Test_Weight" msprop:Generator_ColumnPropNameInTable="Test_WeightColumn" msprop:Generator_UserColumnName="Test_Weight" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gross_Vehicle_Weight_Rating_x0020__" msprop:Generator_ColumnVarNameInTable="columnGross_Vehicle_Weight_Rating__" msprop:Generator_ColumnPropNameInRow="Gross_Vehicle_Weight_Rating__" msprop:Generator_ColumnPropNameInTable="Gross_Vehicle_Weight_Rating__Column" msprop:Generator_UserColumnName="Gross_Vehicle_Weight_Rating _" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Towing_Capacity_Maximum_x0020_" msprop:Generator_ColumnVarNameInTable="columnTowing_Capacity_Maximum_" msprop:Generator_ColumnPropNameInRow="Towing_Capacity_Maximum_" msprop:Generator_ColumnPropNameInTable="Towing_Capacity_Maximum_Column" msprop:Generator_UserColumnName="Towing_Capacity_Maximum " minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Payload" msprop:Generator_ColumnVarNameInTable="columnPayload" msprop:Generator_ColumnPropNameInRow="Payload" msprop:Generator_ColumnPropNameInTable="PayloadColumn" msprop:Generator_UserColumnName="Payload" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cargo_Volume_Behind_Front_Row" msprop:Generator_ColumnVarNameInTable="columnCargo_Volume_Behind_Front_Row" msprop:Generator_ColumnPropNameInRow="Cargo_Volume_Behind_Front_Row" msprop:Generator_ColumnPropNameInTable="Cargo_Volume_Behind_Front_RowColumn" msprop:Generator_UserColumnName="Cargo_Volume_Behind_Front_Row" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cargo_Volume_Behind_Second_Row" msprop:Generator_ColumnVarNameInTable="columnCargo_Volume_Behind_Second_Row" msprop:Generator_ColumnPropNameInRow="Cargo_Volume_Behind_Second_Row" msprop:Generator_ColumnPropNameInTable="Cargo_Volume_Behind_Second_RowColumn" msprop:Generator_UserColumnName="Cargo_Volume_Behind_Second_Row" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cargo_Volume_Behind_Third_Row" msprop:Generator_ColumnVarNameInTable="columnCargo_Volume_Behind_Third_Row" msprop:Generator_ColumnPropNameInRow="Cargo_Volume_Behind_Third_Row" msprop:Generator_ColumnPropNameInTable="Cargo_Volume_Behind_Third_RowColumn" msprop:Generator_UserColumnName="Cargo_Volume_Behind_Third_Row" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Enclosed_Volume" msprop:Generator_ColumnVarNameInTable="columnEnclosed_Volume" msprop:Generator_ColumnPropNameInRow="Enclosed_Volume" msprop:Generator_ColumnPropNameInTable="Enclosed_VolumeColumn" msprop:Generator_UserColumnName="Enclosed_Volume" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Passenger_Volume" msprop:Generator_ColumnVarNameInTable="columnPassenger_Volume" msprop:Generator_ColumnPropNameInRow="Passenger_Volume" msprop:Generator_ColumnPropNameInTable="Passenger_VolumeColumn" msprop:Generator_UserColumnName="Passenger_Volume" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cargo_Volume_Index" msprop:Generator_ColumnVarNameInTable="columnCargo_Volume_Index" msprop:Generator_ColumnPropNameInRow="Cargo_Volume_Index" msprop:Generator_ColumnPropNameInTable="Cargo_Volume_IndexColumn" msprop:Generator_UserColumnName="Cargo_Volume_Index" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Luggage_Capacity" msprop:Generator_ColumnVarNameInTable="columnLuggage_Capacity" msprop:Generator_ColumnPropNameInRow="Luggage_Capacity" msprop:Generator_ColumnPropNameInTable="Luggage_CapacityColumn" msprop:Generator_UserColumnName="Luggage_Capacity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Seating_Max" msprop:Generator_ColumnVarNameInTable="columnSeating_Max" msprop:Generator_ColumnPropNameInRow="Seating_Max" msprop:Generator_ColumnPropNameInTable="Seating_MaxColumn" msprop:Generator_UserColumnName="Seating_Max" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Standard_Rows_of_Seating" msprop:Generator_ColumnVarNameInTable="columnStandard_Rows_of_Seating" msprop:Generator_ColumnPropNameInRow="Standard_Rows_of_Seating" msprop:Generator_ColumnPropNameInTable="Standard_Rows_of_SeatingColumn" msprop:Generator_UserColumnName="Standard_Rows_of_Seating" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Frontal_Area" msprop:Generator_ColumnVarNameInTable="columnFrontal_Area" msprop:Generator_ColumnPropNameInRow="Frontal_Area" msprop:Generator_ColumnPropNameInTable="Frontal_AreaColumn" msprop:Generator_UserColumnName="Frontal_Area" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Aerodynamic_Drag_coeffecient_cd" msprop:Generator_ColumnVarNameInTable="columnAerodynamic_Drag_coeffecient_cd" msprop:Generator_ColumnPropNameInRow="Aerodynamic_Drag_coeffecient_cd" msprop:Generator_ColumnPropNameInTable="Aerodynamic_Drag_coeffecient_cdColumn" msprop:Generator_UserColumnName="Aerodynamic_Drag_coeffecient_cd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Coefficient_of_Rolling_Resistance_CRR" msprop:Generator_ColumnVarNameInTable="columnCoefficient_of_Rolling_Resistance_CRR" msprop:Generator_ColumnPropNameInRow="Coefficient_of_Rolling_Resistance_CRR" msprop:Generator_ColumnPropNameInTable="Coefficient_of_Rolling_Resistance_CRRColumn" msprop:Generator_UserColumnName="Coefficient_of_Rolling_Resistance_CRR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fuel_Capacity" msprop:Generator_ColumnVarNameInTable="columnFuel_Capacity" msprop:Generator_ColumnPropNameInRow="Fuel_Capacity" msprop:Generator_ColumnPropNameInTable="Fuel_CapacityColumn" msprop:Generator_UserColumnName="Fuel_Capacity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Electrical_System_Voltage" msprop:Generator_ColumnVarNameInTable="columnElectrical_System_Voltage" msprop:Generator_ColumnPropNameInRow="Electrical_System_Voltage" msprop:Generator_ColumnPropNameInTable="Electrical_System_VoltageColumn" msprop:Generator_UserColumnName="Electrical_System_Voltage" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="A_C_Refrigerant_Type" msprop:Generator_ColumnVarNameInTable="columnA_C_Refrigerant_Type" msprop:Generator_ColumnPropNameInRow="A_C_Refrigerant_Type" msprop:Generator_ColumnPropNameInTable="A_C_Refrigerant_TypeColumn" msprop:Generator_UserColumnName="A_C_Refrigerant_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="A_C_Compressor_Displacement" msprop:Generator_ColumnVarNameInTable="columnA_C_Compressor_Displacement" msprop:Generator_ColumnPropNameInRow="A_C_Compressor_Displacement" msprop:Generator_ColumnPropNameInTable="A_C_Compressor_DisplacementColumn" msprop:Generator_UserColumnName="A_C_Compressor_Displacement" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_Notes" msprop:Generator_ColumnVarNameInTable="columnVehicle_Notes" msprop:Generator_ColumnPropNameInRow="Vehicle_Notes" msprop:Generator_ColumnPropNameInTable="Vehicle_NotesColumn" msprop:Generator_UserColumnName="Vehicle_Notes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Electric_Power" msprop:Generator_ColumnVarNameInTable="columnElectric_Power" msprop:Generator_ColumnPropNameInRow="Electric_Power" msprop:Generator_ColumnPropNameInTable="Electric_PowerColumn" msprop:Generator_UserColumnName="Electric_Power" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Voltage_or_Pressure" msprop:Generator_ColumnVarNameInTable="columnVoltage_or_Pressure" msprop:Generator_ColumnPropNameInRow="Voltage_or_Pressure" msprop:Generator_ColumnPropNameInTable="Voltage_or_PressureColumn" msprop:Generator_UserColumnName="Voltage_or_Pressure" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Final_Assembly_State_Province" msprop:Generator_ColumnVarNameInTable="columnFinal_Assembly_State_Province" msprop:Generator_ColumnPropNameInRow="Final_Assembly_State_Province" msprop:Generator_ColumnPropNameInTable="Final_Assembly_State_ProvinceColumn" msprop:Generator_UserColumnName="Final_Assembly_State_Province" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Final_Assembly_Country" msprop:Generator_ColumnVarNameInTable="columnFinal_Assembly_Country" msprop:Generator_ColumnPropNameInRow="Final_Assembly_Country" msprop:Generator_ColumnPropNameInTable="Final_Assembly_CountryColumn" msprop:Generator_UserColumnName="Final_Assembly_Country" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0028_Credited_x0029__x0020_Fuel_x0020_Economy" msprop:Generator_ColumnVarNameInTable="_column_Credited__Fuel_Economy" msprop:Generator_ColumnPropNameInRow="__Credited__Fuel_Economy" msprop:Generator_ColumnPropNameInTable="__Credited__Fuel_EconomyColumn" msprop:Generator_UserColumnName="(Credited) Fuel Economy" type="xs:double" minOccurs="0" />
+              <xs:element name="Fuel_x0020_Type" msprop:Generator_ColumnVarNameInTable="columnFuel_Type" msprop:Generator_ColumnPropNameInRow="Fuel_Type" msprop:Generator_ColumnPropNameInTable="Fuel_TypeColumn" msprop:Generator_UserColumnName="Fuel Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Final_Assembly_City" msprop:Generator_ColumnVarNameInTable="columnFinal_Assembly_City" msprop:Generator_ColumnPropNameInRow="Final_Assembly_City" msprop:Generator_ColumnPropNameInTable="Final_Assembly_CityColumn" msprop:Generator_UserColumnName="Final_Assembly_City" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FE_x0020_Target" msprop:Generator_ColumnVarNameInTable="columnFE_Target" msprop:Generator_ColumnPropNameInRow="FE_Target" msprop:Generator_ColumnPropNameInTable="FE_TargetColumn" msprop:Generator_UserColumnName="FE Target" type="xs:double" minOccurs="0" />
+              <xs:element name="Liters" msprop:Generator_ColumnVarNameInTable="columnLiters" msprop:Generator_ColumnPropNameInRow="Liters" msprop:Generator_ColumnPropNameInTable="LitersColumn" msprop:Generator_UserColumnName="Liters" type="xs:double" minOccurs="0" />
+              <xs:element name="HP" msprop:Generator_ColumnVarNameInTable="columnHP" msprop:Generator_ColumnPropNameInRow="HP" msprop:Generator_ColumnPropNameInTable="HPColumn" msprop:Generator_UserColumnName="HP" type="xs:double" minOccurs="0" />
+              <xs:element name="MPG" msprop:Generator_ColumnVarNameInTable="columnMPG" msprop:Generator_ColumnPropNameInRow="MPG" msprop:Generator_ColumnPropNameInTable="MPGColumn" msprop:Generator_UserColumnName="MPG" type="xs:double" minOccurs="0" />
+              <xs:element name="NV" msprop:Generator_ColumnVarNameInTable="columnNV" msprop:Generator_ColumnPropNameInRow="NV" msprop:Generator_ColumnPropNameInTable="NVColumn" msprop:Generator_UserColumnName="NV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0023__x0020_FWD_x0020_Gears" msprop:Generator_ColumnVarNameInTable="_column__FWD_Gears" msprop:Generator_ColumnPropNameInRow="___FWD_Gears" msprop:Generator_ColumnPropNameInTable="___FWD_GearsColumn" msprop:Generator_UserColumnName="# FWD Gears" type="xs:double" minOccurs="0" />
+              <xs:element name="Has_AC" msprop:Generator_ColumnVarNameInTable="columnHas_AC" msprop:Generator_ColumnPropNameInRow="Has_AC" msprop:Generator_ColumnPropNameInTable="Has_ACColumn" msprop:Generator_UserColumnName="Has_AC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HP_x0020_KW" msprop:Generator_ColumnVarNameInTable="columnHP_KW" msprop:Generator_ColumnPropNameInRow="HP_KW" msprop:Generator_ColumnPropNameInTable="HP_KWColumn" msprop:Generator_UserColumnName="HP KW" type="xs:double" minOccurs="0" />
+              <xs:element name="IntVolume" msprop:Generator_ColumnVarNameInTable="columnIntVolume" msprop:Generator_ColumnPropNameInRow="IntVolume" msprop:Generator_ColumnPropNameInTable="IntVolumeColumn" msprop:Generator_UserColumnName="IntVolume" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Engine_Type" msprop:Generator_ColumnVarNameInTable="columnEngine_Type" msprop:Generator_ColumnPropNameInRow="Engine_Type" msprop:Generator_ColumnPropNameInTable="Engine_TypeColumn" msprop:Generator_UserColumnName="Engine_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EPA_x0020_MPG" msprop:Generator_ColumnVarNameInTable="columnEPA_MPG" msprop:Generator_ColumnPropNameInRow="EPA_MPG" msprop:Generator_ColumnPropNameInTable="EPA_MPGColumn" msprop:Generator_UserColumnName="EPA MPG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Length" msprop:Generator_ColumnVarNameInTable="columnLength" msprop:Generator_ColumnPropNameInRow="Length" msprop:Generator_ColumnPropNameInTable="LengthColumn" msprop:Generator_UserColumnName="Length" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Width" msprop:Generator_ColumnVarNameInTable="columnWidth" msprop:Generator_ColumnPropNameInRow="Width" msprop:Generator_ColumnPropNameInTable="WidthColumn" msprop:Generator_UserColumnName="Width" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LoadWeight" msprop:Generator_ColumnVarNameInTable="columnLoadWeight" msprop:Generator_ColumnPropNameInRow="LoadWeight" msprop:Generator_ColumnPropNameInTable="LoadWeightColumn" msprop:Generator_UserColumnName="LoadWeight" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ATW" msprop:Generator_ColumnVarNameInTable="columnATW" msprop:Generator_ColumnPropNameInRow="ATW" msprop:Generator_ColumnPropNameInTable="ATWColumn" msprop:Generator_UserColumnName="ATW" type="xs:double" minOccurs="0" />
+              <xs:element name="Transmission_Type" msprop:Generator_ColumnVarNameInTable="columnTransmission_Type" msprop:Generator_ColumnPropNameInRow="Transmission_Type" msprop:Generator_ColumnPropNameInTable="Transmission_TypeColumn" msprop:Generator_UserColumnName="Transmission_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="F95" msprop:Generator_ColumnVarNameInTable="columnF95" msprop:Generator_ColumnPropNameInRow="F95" msprop:Generator_ColumnPropNameInTable="F95Column" msprop:Generator_UserColumnName="F95" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="F96" msprop:Generator_ColumnVarNameInTable="columnF96" msprop:Generator_ColumnPropNameInRow="F96" msprop:Generator_ColumnPropNameInTable="F96Column" msprop:Generator_UserColumnName="F96" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Origin_x0020_Country_x0020_" msprop:Generator_ColumnVarNameInTable="columnOrigin_Country_" msprop:Generator_ColumnPropNameInRow="Origin_Country_" msprop:Generator_ColumnPropNameInTable="Origin_Country_Column" msprop:Generator_UserColumnName="Origin Country " minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Production" msprop:Generator_ColumnVarNameInTable="columnProduction" msprop:Generator_ColumnPropNameInRow="Production" msprop:Generator_ColumnPropNameInTable="ProductionColumn" msprop:Generator_UserColumnName="Production" type="xs:double" minOccurs="0" />
+              <xs:element name="TransmissionID1" msprop:Generator_ColumnVarNameInTable="columnTransmissionID1" msprop:Generator_ColumnPropNameInRow="TransmissionID1" msprop:Generator_ColumnPropNameInTable="TransmissionID1Column" msprop:Generator_UserColumnName="TransmissionID1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_x0020_Code" msprop:Generator_ColumnVarNameInTable="_columnVehicle_Code" msprop:Generator_ColumnPropNameInRow="_Vehicle_Code" msprop:Generator_ColumnPropNameInTable="_Vehicle_CodeColumn" msprop:Generator_UserColumnName="Vehicle Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Engine_x0020_ID" msprop:Generator_ColumnVarNameInTable="_columnEngine_ID" msprop:Generator_ColumnPropNameInRow="_Engine_ID" msprop:Generator_ColumnPropNameInTable="_Engine_IDColumn" msprop:Generator_UserColumnName="Engine ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fuel_x0020_Meter_x0020_Code" msprop:Generator_ColumnVarNameInTable="columnFuel_Meter_Code" msprop:Generator_ColumnPropNameInRow="Fuel_Meter_Code" msprop:Generator_ColumnPropNameInTable="Fuel_Meter_CodeColumn" msprop:Generator_UserColumnName="Fuel Meter Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Avg_x0020_Track_x0020_Width" msprop:Generator_ColumnVarNameInTable="columnAvg_Track_Width" msprop:Generator_ColumnPropNameInRow="Avg_Track_Width" msprop:Generator_ColumnPropNameInTable="Avg_Track_WidthColumn" msprop:Generator_UserColumnName="Avg Track Width" type="xs:double" minOccurs="0" />
+              <xs:element name="F104" msprop:Generator_ColumnVarNameInTable="columnF104" msprop:Generator_ColumnPropNameInRow="F104" msprop:Generator_ColumnPropNameInTable="F104Column" msprop:Generator_UserColumnName="F104" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Platform1" msprop:Generator_ColumnVarNameInTable="columnPlatform1" msprop:Generator_ColumnPropNameInRow="Platform1" msprop:Generator_ColumnPropNameInTable="Platform1Column" msprop:Generator_UserColumnName="Platform1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Assembly_x0020_City" msprop:Generator_ColumnVarNameInTable="columnAssembly_City" msprop:Generator_ColumnPropNameInRow="Assembly_City" msprop:Generator_ColumnPropNameInTable="Assembly_CityColumn" msprop:Generator_UserColumnName="Assembly City" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Final_x0020_Assembly_x0020_Country" msprop:Generator_ColumnVarNameInTable="_columnFinal_Assembly_Country" msprop:Generator_ColumnPropNameInRow="_Final_Assembly_Country" msprop:Generator_ColumnPropNameInTable="_Final_Assembly_CountryColumn" msprop:Generator_UserColumnName="Final Assembly Country" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

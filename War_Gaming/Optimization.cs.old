@@ -1,0 +1,584 @@
+﻿using System;
+using System.IO;
+using System.Data;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
+using System.Diagnostics;
+using System.Linq;
+
+namespace WindowsFormsApplication2
+{
+    // Optimization class to optimize the aggegate Ford profit for selected segments
+    // Need NAG library
+    public class Optimization
+    {
+ 
+        [DllImport("DTW6402DA.dll")]
+        public static extern void E04UEF(string string_, int length_string_);
+
+        [DllImport("DTW6402DA.dll")]
+        public static extern void E04UFF(ref int irevcm, ref int n, ref int nclin, ref int ncnln,
+            ref int lda, ref int ldcj, ref int ldr, double[,] a, double[] bl, double[] bu,
+            ref int iter, int[] istate, double[] c, double[,] cjac, double[] clamda, ref double objf,
+            double[] objgrd, double[,] r, double[] x, int[] needc, int[] iwork, ref int liwork,
+            double[] work, ref int lwork, ref int ifail);
+
+  
+        /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// COMPLIANCE DLL SETTING
+        /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // const string DIR_PATH = "C:\\Project_WarGaming\\pgm\\MDM\\MDM\\bin\\";     
+        const string DIR_PATH = "C:\\Users\\JFANG3\\Documents\\Visual Studio 2012\\WarGamingGUI-v1\\WarGamingV2.5\\WindowsFormsApplication2\\bin\\";
+        string strConfig = DIR_PATH + "config.txt";
+ 
+#if DEBUG
+        const string DLL_PATH = "C:\\Project_WarGaming\\pgm\\WG_compliance_dll\\x64\\Debug\\WG_compliance_64d.dll";
+#else
+        const string DLL_PATH = "C:\\Project_WarGaming\\pgm\\WG_compliance_dll\\x64\\Release\\WG_compliance_64.dll";
+#endif
+
+        [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Auto)]
+        public static extern bool dll_module_init_by_config(string strConfig, int nStrConfig);
+
+        [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Auto)]
+        public static extern bool dll_oem_init(string strOEM, int nStrOEM, int yearSt, int yearEd);
+
+        [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Auto)]
+        public static extern double dll_oem_get_price(string strOEM, int nStrOEM,
+                                                    string strBrand, int nStrBrand,
+                                                    string strNameplate, int nStrNameplate,
+                                                    string strPtTye, int nStrPtType,
+                                                    int baseYear, int targetYear);
+
+        [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Auto)]
+        public static extern bool dll_oem_add_nameplate(string strOEM, int nStrOEM,
+                                                        string strBrand, int nStrBrand,
+                                                        string strNameplate, int nStrNameplate,
+                                                        string strPtTye, int nStrPtType,
+                                                        int year, int idx);
+
+        [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Auto)]
+        public static extern int dll_oem_add_vol_by_array(int[] pVolume, int nSize);
+
+        [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Auto)]
+        public static extern double dll_get_EPA_const_val();
+
+        [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Auto)]
+        public static extern double dll_get_NHTSA_const_val();
+
+        [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Auto)]
+        public static extern void dll_oem_finalize_vol_by_array(int[] pVolume, int nSize);
+
+        [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Auto)]
+        public static extern void dll_module_destroy();
+        /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// COMPLIANCE DLL SETTING
+        /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        
+        
+        // general info about optimal routine
+       
+        private const double epsilon = 0.0; //1.0E-6;
+        private const double lowerB = 0.0; //100.0;
+        
+        private const int numVolumeVar = Routines.numVolumeVar;	// # of decision variables for Volumes by transaction type:
+   
+        private const int numVariable = numVolumeVar  ;// = 5;
+        //private const double normalFactor0 = 1.0E+6; //10000000.0;	// objective normalization constatnt
+        //private  double normalFactor = Routines.timeHorizon * normalFactor0;
+        double[] baseVol = Routines.baseVol;
+    
+ 
+        double normalFactorL = Routines.normalFactor * Routines.timeHorizon; //* 10;
+
+        private static int _displayNAG = 1;//0;	// 1=NAG results display; 0= no display
+        public static int displayNAG { get { return _displayNAG; } set { _displayNAG = value; } }
+
+        //Get data from other routines
+        int baseYear = Routines.baseYear;
+        int timeHorizon = Routines.timeHorizon;
+     
+       
+        Constraint[] newFCons = Routines.genFCons;
+        Macro[] newMacro = Routines.genPopu;
+        //BaseDelta[] baseDelta = Routines.baseDelta;
+  
+
+        //David added for varied tranaction types and vehicle lines by years. 7/27/2006
+     //   int[,] vehTypeIdct = Routines.vehTypeIdct;   //vehTypeIdct[vehNum*TimeHorizon, numVariable]
+        // vehTypeIdct[i,j]=1, if has this type; =0, otherwise
+      // int[] vehTypeLen = ;      //vehTypeLen[vehNum*TimeHorizon]=[n1,n2, ...., nk]'
+        // has ni types for vehicle j and time t.
+     //   string[] vehName = Routines.vehName;      //vehTypeLen[vehNum]=[OEM1+" "+veh_name1,..., OEMn+" "+veh_nameN]'
+        int vehTypeLenTot = Routines.vehTypeLenTot;  //=n1+n2+....+nk
+        //
+
+        public static Decision[] DecisionOptim;
+        
+     //   public static Decision[] shadowPriceEvl;
+
+        int numProdCstr; //the number of production constraints:
+        double[] x;	     // decison vaiables - retail/lease/rental/fleet's market shares
+    //    public static double[] xzero_evl;
+        // # of variable, in order of "retail rental, fleet" in volume,
+        //    and "adspending1 adspending2 " in variable, 
+        // vehicle line 1(year1, year2, ...),vehicle line 2(...), ..., in time
+        public Optimization()
+        {
+            // get the number of selected Ford vehicles
+            //int selFordVehLen = Routines.numSelFordVeh;
+
+            //count the number of production constraints:
+            numProdCstr = 0;
+            for (int i = 0; i < Routines.listOpt.Length; i++)
+            {
+                numProdCstr += Routines.listOpt[i].Count;
+                vehTypeLenTot += Routines.listOpt[i].Count;
+            }
+            //
+
+         //   int numVar = timeHorizon * selFordVehLen * numVariable;  	// double the variable space on purpose(?)
+            x = new double[vehTypeLenTot];							    // init decison vaiables
+            for (int i = 0; i < x.Length; i++) x[i] = 1.0;
+  
+      
+        }
+
+        // main optimal sub-routine to do the optimaization
+        // transaction:		data containing the parameter of nested logit model for each vehicle line
+        // fordConstraint:	ford vehicle line constraints
+        // hData:			historical data
+        // rData:			trading-in data for each vehicle line
+        // fData:			data related to FMCC 
+        public string OptimalRun()
+        {
+            Szroutine szFun = new Szroutine();
+            VehicleData[][] optdata = new VehicleData[Routines.optData.Length][];//Routines.optData;
+            for (int i = 0; i < Routines.optData.Length; i++)
+            {
+                optdata[i] = szFun.CopyVehData(Routines.optData[i]);
+            }
+
+            ArrayList[] listopt = szFun.getOptIndexlist(optdata);
+           
+            // set NAG constants
+            int n = x.Length;
+            // int nclin = (Config.fordVehicle+1)*Config.timeHorizon;	// # of linear constraints, product + unitary
+            int nclin =  numProdCstr;// +timeHorizon * 2 + Routines.AdBgtFlag * 2 * timeHorizon + timeHorizon * 5;		// # of linear constraints, product + CAFE + Ad budget
+            int ncnln = 2;// 0;				// # of nonlinear constraints, none
+           
+
+            int nmax = 2 * n;
+            int nclmax = 2 * nclin;
+            int ncnmax = 10;
+
+
+            int iter = 0;			// # of major iterations
+            double objf = 0.0;		// value of objective function
+            int lda = nclmax;		// 1st dimension of array A(linear constraint), >= max(1,NCLIN)
+            int ldcj = ncnmax;		// 1st dimension of array CJAC(nonlinear constraint), >= max(1,NCNLN)
+            int ldr = nmax;			// 1st dimension of array R(Cholesky factor), >= N
+
+            double[,] a = new double[nmax, lda];					// linear constraint matrix for variables
+            double[] bl = new double[nmax + nclmax + ncnmax];		// low boundary array for constraints
+            double[] bu = new double[nmax + nclmax + ncnmax];		// high boundary array for constraints
+           
+            double[,] cjac = new double[nmax, ldcj];				// gradient array of nonlinear constraints( d(c[i])/d(x[j]) )
+            double[] c = new double[ncnmax];					// values of nonlinear constraints at certain x(i)
+            double[] clamda = new double[nmax + nclmax + ncnmax];	// on exit, the values of QP multipliers from the last QP
+            double[] objgrd = new double[nmax];					// gradient of objective function at x(i)
+            double[,] r = new double[nmax, ldr];					// on exit, contains the upper triangular Cholesky factor
+            int[] needc = new int[ncnmax];						// indices of C/cjac that need to be filled
+            int liwork = 3 * n + nclin + 2 * ncnln + 500;  //8000;	working space, >= 3*N + NCLIN + 2*NCNLN
+            // int lwork = 2 * n * n + 21 * n + 11 * nclin + 10000;    // >=2*N*N + 21*N + 11*NCLIN + 2, if NCLIN>0 and NCNLN=0
+            // modified in May 2016
+            int lwork = 21 * n + 2;                                   
+            if (ncnln == 0 && nclin > 0)
+            {
+                // lwork = 2 * n * n + 21 * n + 11 * nclin + 10000;    // >=2*N*N + 21*N + 11*NCLIN + 2, if NCLIN>0 and NCNLN=0
+                lwork = 2 * n * n + 21 * n + 11 * nclin + 2;    // >=2*N*N + 21*N + 11*NCLIN + 2, if NCLIN>0 and NCNLN=0
+            }
+            else if (ncnln > 0 && nclin >= 0)
+            {
+                // lwork = 2 * n * n + n * nclin + 2 * n * ncnln + 21 * n + 11 * nclin + 22 * ncnln + 10000;   // 2*N*N + N*NCLIN + 2*N*NCNLN + 21*N + 11*NCLIN + 22*NCNLN +1 if NCNLN > 0 and NCLIN >= 0
+                lwork = 2 * n * n + n * nclin + 2 * n * ncnln + 21 * n + 11 * nclin + 22 * ncnln + 1;   // 2*N*N + N*NCLIN + 2*N*NCNLN + 21*N + 11*NCLIN + 22*NCNLN +1 if NCNLN > 0 and NCLIN >= 0
+            }
+            int ifail;											// flag for subroutine
+            int irevcm;											// indicator for entry/re-entry/intermediate exit/final exit 
+            double[] work = new double[lwork];					// work space
+            int[] istate = new int[nmax + nclmax + ncnmax];		// states of constraints /may change to n+nclin+ncnln
+            int[] iwork = new int[liwork];						// work space
+
+
+            if ((n > nmax) || (nclin > nclmax) || (ncnln > ncnmax))
+            {
+                return "Something wrong with NAG dimensions: n/nclin/ncnln.\r\n";
+            }
+
+            // Input:   newFCons -- Ford constraints for variables and production limits
+            //          baseDelta       -- lifetime 
+            // Output:  variable boundary, bu and bl, in volume
+          
+                SetBoundaryNoTC(newFCons, n, bl, bu);
+            
+
+            // nonlinear constraints, none
+           
+
+            // linear constraint coefficient, production
+            SetConstraintCoeff(newFCons,  n, a);
+
+            //for(int i=0; i<ncnln; i++)		// initialize gradients array
+            //	for(int j=0; j<n; j++)	
+            //		cjac[i,j]=0.0; 
+
+            // set objective function normalization constant
+            //Config.normalFactor =1000000;
+
+            ifail = -1;
+            irevcm = 0;
+
+            if (displayNAG == 0)
+            {
+                E04UEF("Nolist", 6);			// if the NAG window is displayed
+                E04UEF("Print Level=0", 13);	//display result details or not
+            }
+            E04UEF("Derivative Level=0", 18);
+            E04UEF("Verify Level=0", 14);
+            int major_iter = (int)Math.Max(800, 3 * (n + nclin) + 10 * ncnln);
+            E04UEF("Major Iteration Limit = " + major_iter + " ", 28);
+
+            //E04UEF("Major Iteration Limit = 200", 27);
+            //E04UEF("Function Precision = 1.0E-12", 28);
+            //E04UEF("Optimality Tolerance = 1.0E-10", 30);
+            //E04UEF("Line Search Tolerance = 0.5", 27);    //0.1, 0.9
+
+            /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            /// COMPLIANCE DLL SETTING
+            /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            
+            string stringText = "";			// return text info for display
+            int lastIter = -1;				// to detect major iteration
+            // dll_module_init();              // create DLL objects
+            bool bRtn = dll_module_init_by_config(strConfig, strConfig.Length);
+            if (!bRtn) MessageBox.Show("Failed to initialize a compliance dll");
+
+            string oem = Routines.optOEM.ToUpper();
+            bool bRtnOEMInit = dll_oem_init(oem, oem.Length, Routines.beginYear, Routines.beginYear + Routines.timeHorizon - 1);
+            if (!bRtnOEMInit) MessageBox.Show("Failed to initialize OEM in compliance dll");
+            int nEvalEPA = 0, nEvalEPANeg = 0;  // EPA Evaluation Count, EPA Evaluation Count (negative returns)
+            double bestEPA = -1.0E+25, worstEPA = 1.0E+25, finalEPA = 0;    // best, worst, final EPA values            
+            int nEvalNHTSA = 0, nEvalNHTSANeg = 0; // NHTSA Evaluation Count, NHTSA Evaluation Count (negative returns)
+            double bestNHTSA = -1.0E+25, worstNHTSA = 1.0E+25, finalNHTSA = 0;  // best, worst, final NHTSA values
+
+            // int year = 2016;
+            int year = Routines.beginYear;
+            int nArraySize = 0;
+            string ptType = "ICE";          // Temporarily use ICE for all nameplates
+            bool bRtnAddNameplate = true;
+            for (int i = 0; i < Routines.listOpt.Length; i++)   // for each year
+            {
+                string[] vehName = new string[Routines.listOpt[i].Count];
+                Routines.listOpt[i].CopyTo(vehName);
+                for (int j = 0; j < vehName.Length; j++)        // for each nameplate in the year
+                {
+                    Regex sl = new Regex(" ");
+                    string[] tmp = sl.Split(vehName[j]);
+                    string brand = tmp[0];
+                    string nameplate = tmp[1];
+                    brand = brand.ToUpper();
+                    nameplate = nameplate.ToUpper();
+                    if ( !dll_oem_add_nameplate(oem, oem.Length, brand, brand.Length, nameplate, nameplate.Length, ptType, ptType.Length, year + i, nArraySize++) )
+                    {
+                        bRtnAddNameplate = false;
+                        break;
+                    }
+                }
+            }
+            if (!bRtnAddNameplate) MessageBox.Show("Failed to add nameplate index in compliance dll");
+
+            int[] vol = new Int32[nArraySize];  // allocation array for volumes going into dll
+            var sw = new Stopwatch();
+            /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            /// COMPLIANCE DLL SETTING
+            /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            string stringText = "";			// return text info for display
+            DateTime startTD = DateTime.Now;
+            stringText += "Optimization starts at " + DateTime.Now.ToLongTimeString() + ", " + DateTime.Now.ToShortDateString() + "\r\n";
+            do
+            {
+                E04UFF(ref irevcm, ref n, ref nclin, ref ncnln, ref lda, ref ldcj, ref ldr, a, bl, bu, ref iter, istate,
+                    c, cjac, clamda, ref objf, objgrd, r, x, needc, iwork, ref liwork, work, ref lwork, ref ifail);
+
+                if (iter != lastIter)					// every major iteration
+                {
+                    //stringText += "Iter="+iter+" ";
+                    lastIter = iter;
+                    //CalculatePopulation(x);
+                }
+
+                if ((irevcm > 0) && (ifail == -1))
+                {
+                    if ((irevcm == 1) || (irevcm == 3))		// calculate value of objective function
+                        objf = -objFunction(optdata, x, listopt);	// this is a minimization programmin
+                    if ((irevcm == 2) || (irevcm == 3))		// objective gradient
+                    { }
+                    if ((irevcm == 4) || (irevcm == 6))     // nonlinear constraint
+                    {
+
+                        /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                        /// COMPLIANCE DLL SETTING
+                        /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                        sw.Start();
+                        vol = x.Zip(baseVol, (_x, _y) => (int)(_x * _y)).ToArray();     // get volumes
+                        int sumVol = vol.Sum();                                         // total volume 
+                        int ackVol = dll_oem_add_vol_by_array(vol, nArraySize);         // put a volume scenario and return with acknowledged volumes by dll
+
+                        double cValEPA = dll_get_EPA_const_val();                       // get EPA compliance value
+                        if (bestEPA < cValEPA) bestEPA = cValEPA;
+                        if (worstEPA > cValEPA) worstEPA = cValEPA;
+                        finalEPA = cValEPA;
+                        c[0] = cValEPA;
+                        nEvalEPA++;                        
+                        if (cValEPA < 0) nEvalEPANeg++;
+
+                        double cValNHTSA = dll_get_NHTSA_const_val();                   // get NHTSA compliance value
+                        if (bestNHTSA < cValNHTSA) bestNHTSA = cValNHTSA;
+                        if (worstNHTSA > cValNHTSA) worstNHTSA = cValNHTSA;
+                        finalNHTSA = cValNHTSA;
+                        c[1] = cValNHTSA;
+                        nEvalNHTSA++;
+                        if (cValNHTSA < 0) nEvalNHTSANeg++;
+
+                        sw.Stop();
+                        /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                        /// COMPLIANCE DLL SETTING
+                        /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                    }
+                    if ((irevcm == 5) || (irevcm == 6))		// constraint Jacobian
+                    { 
+                    }
+                }
+            }
+            while ((irevcm > 0) && (ifail == -1));
+
+           
+
+            DateTime stopTD = DateTime.Now;
+            stringText += "\r\nOptimization ends at " + DateTime.Now.ToLongTimeString() + ", " + DateTime.Now.ToShortDateString() + "\r\n";
+            double duration = (stopTD.Ticks - startTD.Ticks) / 10000000.0;
+            stringText += "Duration = " + duration.ToString() + "s.\r\n\r\n";
+
+            stringText += "Flag i-fail = " + ifail + "\r\n";
+            //stringText += "Objective function = " +(-1)*objf +"\r\n";
+            stringText += "Total iterations = " + iter + "\r\n";
+
+            /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            /// COMPLIANCE DLL SETTING
+            /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            TimeSpan tmSpan = new TimeSpan();
+            tmSpan = sw.Elapsed;
+            stringText += "[DLL]Total Time Spent For Compliance DLL: " + tmSpan.TotalSeconds.ToString() + " (sec)" + "\r\n";
+            stringText += "[DLL]Number of EPA Evaluation function calls (Negative) = " + nEvalEPA + "(" + nEvalEPANeg + ")" + "\r\n";
+            stringText += "[DLL]Best/Worst/Final EPA Cumulative Balance = [" + bestEPA + ", " + worstEPA + "] " + finalEPA + "\r\n";
+            stringText += "[DLL]Number of NHTSA Evaluation function calls (Negative) = " + nEvalNHTSA + "(" + nEvalNHTSANeg + ")" + "\r\n";
+            stringText += "[DLL]Best/Worst/Final NHTSA Cumulative Balance = [" + bestNHTSA + ", " + worstNHTSA + "] " + finalNHTSA+ "\r\n";            
+            /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            /// COMPLIANCE DLL SETTING
+            /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            double actualProfit = (-1.0) * objf;
+            //MessageBox.Show("Total Profit = " + actualProfit);
+            stringText += "Objective normalization constant=" + normalFactorL + "\r\n";
+            stringText += "The vaule of objective function = " + actualProfit + "\r\n";
+            stringText += "Average profit = " + actualProfit * normalFactorL / timeHorizon + "\r\n\r\n";
+
+            DecisionOptim = xToDec(x);
+
+            for (int i = 0; i < x.Length; i++)
+                if (Math.Abs(x[i]) < 1.0E-10) x[i] = 0.0;
+
+            stringText += "Decision variables:\r\n";
+
+            stringText += szFun.PrntDec(DecisionOptim);
+
+            string file = Directory.GetCurrentDirectory() + "\\OptimalResult" + ".xls";
+            VehicleData[][] result = szFun.preOutData(optdata);
+            Routines.exportOptdata(file, result);
+            return stringText;
+        }
+
+        //Set lower and upper bound for decision variables and linear constraints
+        //  	DSVar -- dimension = Config.timeHorizon*Config.VehLineList * Config.numVariable;
+        //							in order:	vehicle line 1(year1, year2, ...), vehicle line 2(...), ...
+        //							in each year: retail(Volume), rental(Volume), fleet, 
+        //                                      Ad spending (2 variables)
+        //      Linear Constraints -- annual production limits
+        //      n -- number of total decision variables
+        //      fordConstraint -- only include vehicle lines in the selected segment
+        //          SAME ORDER as decision variables, sorted by vehicle line, year for the record list
+
+  
+        private double objFunction(VehicleData[][] optData, double[] x, ArrayList[] listOpt)
+        {
+            double objValue = 0.0;
+
+            // get the number of selected Ford vehicles
+            //int selFordVehLen = Routines.numSelFordVeh;
+
+            Decision[] decision =  xToDec(x);
+
+            Szroutine szFun = new Szroutine();
+            
+            ArrayList listDecision = szFun.getDecIndexlist(decision);
+            objValue = szFun.TestCalProfit(optData, decision, listDecision);
+
+            //MessageBox.Show("Total Profit = " + objValue);
+
+            return objValue / normalFactorL;
+        }
+
+
+        private Decision[] xToDec(double[] x)
+        {
+
+            Decision[] decision = new Decision[vehTypeLenTot];
+            for (int i = 0; i < x.Length; i++)
+                if (Math.Abs(x[i]) < 1.0E-10) x[i] = 0.0;
+
+            //Move x[] to class: decision
+            int id = 0;
+           
+            for (int i = 0; i < Routines.listOpt.Length; i++)         
+            {
+                string [] vehName = new string[Routines.listOpt[i].Count];
+                Routines.listOpt[i].CopyTo(vehName);
+                for (int j = 0;j < vehName.Length;j++)
+                 {
+                     int tt = i + Routines.beginYear;
+                    
+                        decision[id] = new Decision();
+                      //  decision[id].OEM = oem;
+                        decision[id].modelName = vehName[j];
+                        decision[id].transYear = tt;
+                             decision[id].Volume = x[id] * baseVol[id];
+                       id += 1;
+                 }
+                
+            }
+            return decision;
+        }
+
+
+      
+        private void SetBoundaryNoTC(Constraint[] fConstraint, int n, double[] bl, double[] bu)
+        {
+            
+           // int[] prodgroup_id = new int[numProdCstr];
+ 
+            int id = 0;
+            for (int t = 0; t < timeHorizon; t++)
+            {
+                for (int i = 0; i < Routines.listOpt[t].Count; i++)         //get selected Ford vehicle list.
+                {
+                    bl[id] = 0.0;
+                    bu[id] = 1.0e20;
+                    id++;
+                }
+               
+                
+            }
+            //set boundary for linear constraint, production max/min
+            for (int t = 0; t < timeHorizon; t++)
+            {
+                string[] vehName = new string[Routines.listOpt[t].Count];
+                Routines.listOpt[t].CopyTo(vehName);
+
+                for (int i = 0; i < vehName.Length; i++)         //get selected Ford vehicle list.
+                {
+
+                    int tt = t + Routines.beginYear;
+                    int cid = Routines.listNewFCons.IndexOf(vehName[i] + tt);
+
+
+                    double minProd = Routines.genFCons[cid].productionMin;//cid].productionMin;
+                    double maxProd = Routines.genFCons[cid].productionMax;
+
+
+                    bl[id] = minProd / baseVol[i];
+                    bu[id] = maxProd / baseVol[i];
+
+                    id += 1;
+                }
+
+             }
+
+            //set  boundary fo rnonlinear constraint, production max/min
+
+            for (int t = 0; t < timeHorizon; t++)
+            {
+            
+
+                for (int i = 0; i <2 ; i++)         //get selected Ford vehicle list.
+                {
+
+                   
+
+                    bl[id] = 0;
+                    bu[id] = 1.0e20;
+
+                    id += 1;
+                }
+
+            }
+
+
+}
+
+
+
+        private void SetConstraintCoeff(Constraint[] fConstraint, int n, double[,] a)
+        {
+            // linear constraint coefficient, production
+           // int numProdCstr = 0;
+         //  int idlo = 0;
+         //   int icol = 0;
+            for (int i = 0; i < numProdCstr; i++)
+            {
+                
+                    for (int j = 0; j < n; j++)
+                    {
+                        if (j == i)
+                            a[j, i] = 1.0;
+                        else
+                            a[j, i] = 0.0;
+                    }
+               //     icol += 1;
+                
+               // idlo += vehTypeLen[i];
+            }
+            //At the end, # of product constraints: numProdCstr = icol 
+
+            //4*timeHorizon linear constraints' coefficients, car & truck CAFE, Ford & L/M AdBudget
+           
+
+
+            }
+
+
+
+    
+
+       
+
+        /////////////////////////
+    }
+}
